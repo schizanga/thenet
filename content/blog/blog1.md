@@ -1,7 +1,7 @@
 +++
 date = "2026-04-07T18:07:20-04:00"
 title = "Blog1"
-draft = false
+draft = true
 
 #
 tags = ["markdown","syntax",]
