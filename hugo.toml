@@ -1,12 +1,12 @@
 # Base URL used when generating links to your pages
 # Set to the URL for your site
-baseURL = ""
+baseURL = "blog.samchizanga.com"
 
 # The name of this wonderful theme ;-).
 theme = 'hugo-bearblog'
 
 # Basic metadata configuration for your blog.
-title = "Hi, I'm Sam"
+title = "Hi, I'm Sam 👋🏾🙂"
 author = "Sam Chizanga"
 copyright = "Copyright © 2026."
 languageCode = "en-US"
@@ -23,7 +23,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
-  description = "Hugo + Bear = :heart:"
+ description = "Personal essays, esoteric ramblings, and useful 2 am lists."
 
   # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
   # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
@@ -68,3 +68,12 @@ ignoreErrors = ["error-disable-taxonomy"]
     [caches]
       [caches.images]
         dir = ':cacheDir/images'
+
+               [[menu.main]]
+            name = "about"
+            url = "/about"
+            weight = 1
+        [[menu.main]]
+            name = "blog"
+            url = "/blog"
+            weight = 2

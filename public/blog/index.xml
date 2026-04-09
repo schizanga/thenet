@@ -1,34 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>blog on Hi, I&#39;m Sam</title>
-    <link>/blog/</link>
-    <description>Recent content in blog on Hi, I&#39;m Sam</description>
+    <title>blog on Hi, I&#39;m Sam 👋🏾🙂</title>
+    <link>//localhost:1313/blog/</link>
+    <description>Recent content in blog on Hi, I&#39;m Sam 👋🏾🙂</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2026.</copyright>
-    <lastBuildDate>Tue, 07 Apr 2026 18:07:20 -0400</lastBuildDate>
-    <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Jan 2026 01:19:27 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Blog1</title>
-      <link>/blog1/</link>
-      <pubDate>Tue, 07 Apr 2026 18:07:20 -0400</pubDate>
-      <guid>/blog1/</guid>
-      <description>&lt;p&gt;This is a page about »Blog1«.&lt;/p&gt;&#xA;&lt;p&gt;Your intro paragraph here.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;assets/my-image.jpg&#34; alt=&#34;Alt text&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;More content here.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;assets/another-image.jpg&#34; alt=&#34;Another image&#34;&gt;&lt;/p&gt;</description>
+      <title>🏡 kumba</title>
+      <link>//localhost:1313/kumba/</link>
+      <pubDate>Wed, 28 Jan 2026 01:19:27 -0400</pubDate>
+      <guid>//localhost:1313/kumba/</guid>
+      <description>&lt;p&gt;When I first set out to throw kumba* my goal was to lead a creative project that created financial opportunities for others who looked like me, doing the thing I loved most; shaking ass. I’m still in awe almost six months later - not because it was groundbreaking or revolutionary, but because &lt;strong&gt;we did just that&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;It was a night of connecting, reconnecting, laughter, movement, and everything in between. Kumba came together because of the efforts and will of many people, besides myself. Ideation requires action to become a reality and despite having every opportunity and excuse to quit, I stayed the course. After years of undervaluing my headstrong, creative, and resilient nature – I started and finished a project.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Blog</title>
-      <link>/blog/</link>
-      <pubDate>Tue, 07 Apr 2026 17:36:08 -0400</pubDate>
-      <guid>/blog/</guid>
-      <description>&lt;p&gt;This is a page about »Blog«.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>/markdown-syntax-guide/</link>
-      <pubDate>Fri, 03 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/markdown-syntax-guide/</guid>
-      <description>&lt;p&gt;For a quick cheatsheet, check out &lt;a href=&#34;https://simplemde.com/markdown-guide&#34;&gt;https://simplemde.com/markdown-guide&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+      <title>does that say virgo?</title>
+      <link>//localhost:1313/does-that-say-virgo/</link>
+      <pubDate>Sat, 30 Aug 2025 01:36:08 -0400</pubDate>
+      <guid>//localhost:1313/does-that-say-virgo/</guid>
+      <description>&lt;p&gt;“No, Virago.”&lt;br&gt;&#xA;“Why would anyone tattoo something like that on their body?!”&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;It’s hot.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;It’s true.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;It’s a reminder.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;It’s also a party trick (an anagram).&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;virago | vəˈräɡō, vəˈrāɡō |&lt;/p&gt;&#xA;&lt;p&gt;noun (plural viragos or viragoes)&lt;/p&gt;&#xA;&lt;p&gt;1. A loud, obnoxious woman.&lt;/p&gt;&#xA;&lt;p&gt;2. A woman of great stature, strength, and courage.&#xA;Everybody look left. Everybody look right&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;What do you see?&lt;/p&gt;&#xA;&lt;p&gt;I see the yappers offline and online, doing what they know best. I’m not the first to say this and I won’t be the last. It’s not a coinky-dink that text-based social media has &lt;a href=&#34;https://substack.com/inbox/post/159772708&#34;&gt;seen a re-emergence in the last few years&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

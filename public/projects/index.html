@@ -1,231 +1,348 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="/images/favicon.png" />
-<title>projects | Hi, I&#39;m Sam</title>
-<meta name="title" content="projects" />
-<meta name="description" content="" />
-<meta name="keywords" content="" />
+<link rel="shortcut icon" href="//localhost:1313/images/favicon.png" />
+<title>Projects | Hi, I&#39;m Sam</title>
+<meta name="title" content="Projects" />
+<meta name="description" content="Personal essays, esoteric ramblings, and useful 2 am lists." />
+<meta name="keywords" content="markdown,syntax,virgo," />
 
 
-<meta property="og:url" content="/projects/">
+<meta property="og:url" content="//localhost:1313/projects/">
   <meta property="og:site_name" content="Hi, I&#39;m Sam">
-  <meta property="og:title" content="projects">
-  <meta property="og:description" content="Hugo &#43; Bear = :heart:">
+  <meta property="og:title" content="Projects">
+  <meta property="og:description" content="Personal essays, esoteric ramblings, and useful 2 am lists.">
   <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="article">
-    <meta property="og:image" content="/images/share.png">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="//localhost:1313/images/share.png">
 
 
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="/images/share.png">
-  <meta name="twitter:title" content="projects">
-  <meta name="twitter:description" content="Hugo &#43; Bear = :heart:">
+  <meta name="twitter:image" content="//localhost:1313/images/share.png">
+  <meta name="twitter:title" content="Projects">
+  <meta name="twitter:description" content="Personal essays, esoteric ramblings, and useful 2 am lists.">
 
 
 
 
-  <meta itemprop="name" content="projects">
-  <meta itemprop="description" content="Hugo &#43; Bear = :heart:">
-  <meta itemprop="image" content="/images/share.png">
+  <meta itemprop="name" content="Projects">
+  <meta itemprop="description" content="Personal essays, esoteric ramblings, and useful 2 am lists.">
+  <meta itemprop="image" content="//localhost:1313/images/share.png">
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
+  <link rel="alternate" type="application/rss+xml" href="//localhost:1313/projects/index.xml" title="Hi, I'm Sam" />
   <style>
-  :root {
-    --width: 720px;
-    --font-main: Verdana, sans-serif;
-    --font-secondary: Verdana, sans-serif;
-    --font-scale: 1em;
-    --background-color: #fff;
-    --heading-color: #222;
-    --text-color: #444;
-    --link-color: #3273dc;
-    --visited-color: #8b6fcb;
-    --blockquote-color: #222;
-  }
-
-  @media (prefers-color-scheme: dark) {
     :root {
-      --background-color: #01242e;
-      --heading-color: #eee;
-      --text-color: #ddd;
-      --link-color: #8cc2dd;
-      --visited-color: #8b6fcb;
-      --blockquote-color: #ccc;
+        --width: 720px;
+        --font-main: Verdana, sans-serif;
+        --font-secondary: Verdana, sans-serif;
+        --font-scale: 1em;
+        --background-color: #000000;
+        --heading-color: #222;
+        --text-color: #444;
+        --link-color: #3273dc;
+        --visited-color: #8b6fcb;
+        --blockquote-color: #222;
     }
-  }
 
-  body {
-    font-family: var(--font-secondary);
-    font-size: var(--font-scale);
-    margin: auto;
-    padding: 20px;
-    max-width: var(--width);
-    text-align: left;
-    background-color: var(--background-color);
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: var(--text-color);
-  }
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --background-color: #000000;
+            --heading-color: #fffff;
+            --text-color: #ddd;
+            --link-color: #8cc2dd;
+            --visited-color: #8b6fcb;
+            --blockquote-color: #ccc;
+        }
+    }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-main);
-    color: var(--heading-color);
-  }
+    body {
+        font-family: var(--font-secondary);
+        font-size: var(--font-scale);
+        margin: auto;
+        padding: 20px;
+        max-width: var(--width);
+        text-align: left;
+        background-color: var(--background-color);
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        line-height: 1.5;
+        color: var(--text-color);
+    }
 
-  a {
-    color: var(--link-color);
-    cursor: pointer;
-    text-decoration: none;
-  }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-main);
+        color: var(--heading-color);
+    }
 
-  a:hover {
-    text-decoration: underline;
-  }
+    a {
+        color: var(--link-color);
+        cursor: pointer;
+        text-decoration: none;
+    }
 
-  nav a {
-    margin-right: 8px;
-  }
+    a:hover {
+        text-decoration: underline;
+    }
 
-  strong,
-  b {
-    color: var(--heading-color);
-  }
+    nav a {
+        margin-right: 8px;
+    }
 
-  button {
-    margin: 0;
-    cursor: pointer;
-  }
+    strong,
+    b {
+        color: var(--heading-color);
+    }
 
-  time {
-    font-family: monospace;
-    font-style: normal;
-    font-size: 15px;
-  }
+    button {
+        margin: 0;
+        cursor: pointer;
+    }
 
-  main {
-    line-height: 1.6;
-  }
+    time {
+        font-family: monospace;
+        font-style: normal;
+        font-size: 15px;
+    }
 
-  table {
-    width: 100%;
-  }
+    main {
+        line-height: 1.6;
+    }
 
-  hr {
-    border: 0;
-    border-top: 1px dashed;
-  }
+    table {
+        width: 100%;
+    }
 
-  img {
-    max-width: 100%;
-  }
+    hr {
+        border: 0;
+        border-top: 1px dashed;
+    }
 
-  code {
-    font-family: monospace;
-    padding: 2px;
-    border-radius: 3px;
-  }
+    img {
+        max-width: 100%;
+    }
 
-  blockquote {
-    border-left: 1px solid #999;
-    color: var(--blockquote-color);
-    padding-left: 20px;
-    font-style: italic;
-  }
+    code {
+        font-family: monospace;
+        padding: 2px;
+        border-radius: 3px;
+    }
 
-  footer {
-    padding: 25px 0;
-    text-align: center;
-  }
+    blockquote {
+        border-left: 1px solid #999;
+        color: var(--blockquote-color);
+        padding-left: 20px;
+        font-style: italic;
+    }
 
-  .title:hover {
-    text-decoration: none;
-  }
+    footer {
+        padding: 25px 0;
+        text-align: center;
+    }
 
-  .title h1 {
-    font-size: 1.5em;
-  }
+    .title:hover {
+        text-decoration: none;
+    }
 
-  .inline {
-    width: auto !important;
-  }
+    .title h1 {
+        font-size: 1.5em;
+    }
 
-  .highlight,
-  .code {
-    border-radius: 3px;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    overflow-x: auto;
-  }
+    .inline {
+        width: auto !important;
+    }
 
-   
-  ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
-  }
+    .highlight,
+    .code {
+        border-radius: 3px;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        overflow-x: auto;
+    }
 
-  ul.blog-posts li {
-    display: flex;
-  }
+     
+    ul.blog-posts {
+        list-style-type: none;
+        padding: unset;
+    }
 
-  ul.blog-posts li span {
-    flex: 0 0 130px;
-  }
+    ul.blog-posts li {
+        display: flex;
+    }
 
-  ul.blog-posts li a:visited {
-    color: var(--visited-color);
-  }
+    ul.blog-posts li span {
+        flex: 0 0 130px;
+    }
 
+    ul.blog-posts li a:visited {
+        color: var(--visited-color);
+    }
 </style>
+<style>
+     
+    .pink-line {
+        border: none;
+        border-top: 2px solid #ff00ff;  
+        margin: 1.5rem 0;
+    }
 
+     
+    .header-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+    .site-byline {
+        font-size: 0.9rem;
+        color: #888;
+        margin: 0;
+    }
+
+     
+    .post-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        list-style: none;
+        padding: 0.3rem 0;
+    }
+    .post-date {
+        font-family: monospace;
+        font-size: 0.9rem;
+        color: #666;
+    }
+
+     
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+    .social-icons a {
+        text-decoration: none;
+    }
+</style>
 </head>
 
 <body>
-  <header><a href="/" class="title">
-  <h2>Hi, I&#39;m Sam</h2>
-</a>
-<nav>
-<a href="/">home</a>
+  <header><nav><a href="/">home</a> 
+    &nbsp; <a href="/about">about</a> 
+    &nbsp; <a href="/projects">projects</a> 
+    &nbsp; <a href="/blog">blog</a> </nav>
 
-<a href="/about/">about</a>
+<div class="header-main">
+    <div>
+        <h1 style="margin-bottom: 0">Hi, I&#39;m Sam</h1>
+        <p class="site-byline">
+            Personal essays, esoteric ramblings, and useful 2 am lists.
+        </p>
+    </div>
 
-<a href="/projects/">projects</a>
+    
+    <div id="dark-mode-toggle" style="cursor: pointer; font-size: 1.5rem">
+        🌓
+    </div>
+</div>
 
-<a href="/resources/things/">things</a>
+<hr class="pink-line" />
 
-<a href="/blog/">blog</a>
-
-</nav>
+<script>
+    
+    const btn = document.getElementById("dark-mode-toggle");
+    btn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const isDark = document.body.classList.contains("dark-mode");
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+    });
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+</script>
 </header>
   <main>
-
 <content>
+  
+  <ul class="blog-posts">
+    
+    <li>
+      No posts yet
+    </li>
+    
+  </ul>
+  
+  <small>
+    <div>
+      
+      <a href="//localhost:1313/blog/markdown/">#Markdown</a>&nbsp;
+      
+      <a href="//localhost:1313/blog/syntax/">#Syntax</a>&nbsp;
+      
+      <a href="//localhost:1313/blog/virgo/">#Virgo</a>&nbsp;
+      
+    </div>
+  </small>
   
 </content>
 
-
-
-<p>
-  
-</p>
-
   </main>
-  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+  <footer><hr class="pink-line" />
+
+<div class="footer-container">
+    <div class="email-link">
+        <a href="mailto:sam@example.com" style="font-size: 1.5rem">✉️</a>
+    </div>
+
+    <div class="social-icons">
+        <a href="#">⚪</a>
+        <a href="#">⚪</a>
+        <a href="#">⚪</a>
+        <a href="#">⚪</a>
+    </div>
+</div>
+
+<p style="text-align: center; font-size: 0.8rem; opacity: 0.6"></p>
+Made with
+<a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
 </footer>
 
-  
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "dark") {
+        body.classList.add("dark-mode");
+    }
+
+    toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+</script>
 </body>
 
 </html>

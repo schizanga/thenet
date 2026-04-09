@@ -2,18 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Resources on Hi, I&#39;m Sam</title>
-    <link>/resources/</link>
+    <link>//localhost:1313/resources/</link>
     <description>Recent content in Resources on Hi, I&#39;m Sam</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <copyright>Copyright © 2026.</copyright>
-    <atom:link href="/resources/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>things</title>
-      <link>/resources/things/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/resources/things/</guid>
-      <description></description>
-    </item>
+    <atom:link href="//localhost:1313/resources/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

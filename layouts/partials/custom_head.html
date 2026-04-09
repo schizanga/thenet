@@ -1,3 +1,122 @@
-<!-- A partial to be overwritten by the user.
-  Simply place a custom_head.html into
-  your local /layouts/partials-directory -->
+<!-- Google Fonts: Inter (Text), Roboto Mono (Dates), and Noto Color Emoji -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Color+Emoji&family=Roboto+Mono&display=swap"
+    rel="stylesheet"
+/>
+
+<style>
+    /* 1. Global Font Overrides */
+    :root {
+        --font-main: "", "Noto Color Emoji", sans-serif;
+        --font-secondary: "Inter", "Noto Color Emoji", sans-serif;
+    }
+
+    body {
+        /* This ensures Noto Color Emoji is used for all emojis */
+        font-family:
+            "Inter",
+            "Noto Color Emoji",
+            -apple-system,
+            sans-serif;
+        margin: auto;
+        padding: 20px;
+        max-width: 720px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        line-height: 1.6;
+        color: #fff;
+    }
+
+    /* 2. Specific Font Styles */
+    h1,
+    h2,
+    h3,
+    p {
+        .cutive-regular {
+            font-family: "Cutive", serif;
+            font-weight: 200;
+            font-style: normal;
+        }
+    }
+
+    .post-date {
+        font-family: "Roboto Mono", monospace;
+        font-size: 0.85rem;
+        opacity: 0.6;
+    }
+
+    /* 3. Header & Nav Alignment */
+    .nav-top {
+        text-align: right;
+        margin-bottom: 2rem;
+    }
+    .nav-top a {
+        margin-left: 15px;
+        text-decoration: none;
+        color: #3273dc;
+        font-weight: bold;
+    }
+
+    .header-main {
+        margin-bottom: 1rem;
+    }
+    .site-byline {
+        margin: 0;
+        opacity: 0.7;
+        font-size: 0.9rem;
+    }
+
+    /* 4. The Pink Line */
+    .pink-line {
+        border: none;
+        border-top: 2px solid #;
+        margin: 0 0 1.5rem 0;
+    }
+
+    /* 5. Post Layout Spacing */
+    .post-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 1rem;
+    }
+    .post-tags a {
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    /* 6. Footer Layout */
+    main {
+        flex: 1;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+    }
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+    .social-icons svg {
+        fill: currentColor;
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+        .post-meta {
+            flex-direction: column;
+            gap: 5px;
+        }
+        .post-date {
+            align-self: flex-start;
+        }
+    }
+</style>

@@ -1,25 +1,46 @@
 {{ define "main" }}
-{{ if eq .Type "blog" }}{{ if not .Params.menu }}
-<h1>{{ .Title }}</h1>
-<p>
-  <i>
-    <time datetime='{{ .Date.Format "2006-01-02" }}'>
-      {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
-    </time>
-  </i>
-</p>
-{{ end }}{{ end }}
-<content>
-  {{ .Content }}
-</content>
+<article>
+    <!-- 1. Meta row: Tags on left, Date on right -->
+    {{ if eq .Section "blog" }}
+    <div class="post-meta">
+        <div class="post-tags">
+            {{ range (.GetTerms "tags") }}
+            <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+            {{ end }}
+        </div>
+        <div class="post-date">{{ .Date.Format "01/02/06" }}</div>
+    </div>
+    {{ end }}
 
-{{ if eq .Type "blog" }}{{ if (.Param "enablePostNavigator")}}
-{{- partial "post_navigator.html" . -}}
-{{ end }}{{ end }}
+    <!-- 2. Post Title (Tightened spacing) -->
+    <h1 style="margin: 0 0 1.1rem 0; font-size: 1.5rem">{{ .Title }}</h1>
 
-<p>
-  {{ range (.GetTerms "tags") }}
-  <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
-  {{ end }}
-</p>
+    <!-- 3. Post Content -->
+    <div class="post-content">{{ .Content }}</div>
+
+    <!-- 4. Previous/Next Navigation -->
+    {{ if eq .Section "blog" }}
+    <div
+        style="
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4rem;
+            font-weight: bold;
+        "
+    >
+        <div>
+            {{ with .PrevInSection }}
+            <a href="{{ .Permalink }}" style="text-decoration: none"
+                >← PREVIOUS</a
+            >
+            {{ end }}
+        </div>
+        <div>
+            {{ with .NextInSection }}
+            <a href="{{ .Permalink }}" style="text-decoration: none">NEXT →</a>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</article>
 {{ end }}

@@ -66,6 +66,13 @@ a:hover {
     text-decoration: underline;
 }
 
+site-description {
+    margin-top: -10px; /* Pull it closer to the H1 */
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    opacity: 0.8;
+}
+
 nav a {
     margin-right: 8px;
 }
@@ -160,4 +167,25 @@ ul.blog-posts li span {
 
 ul.blog-posts li a:visited {
     color: var(--visited-color);
+}
+
+/* --Dark Mode Overrides ─────────────────────────────────────────────────────── */
+body.dark-mode {
+    --background-color: #01242e;
+    --heading-color: #eee;
+    --text-color: #ddd;
+    --link-color: #8cc2dd;
+    --visited-color: #8b6fcb;
+    --blockquote-color: #ccc;
+}
+
+/* Optional: Smooth transition when switching */
+body {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+#theme-toggle:focus {
+    outline: none;
 }

@@ -1,4 +1,16 @@
-<a href="{{ "" | relURL }}" class="title">
-  <h2>{{ .Site.Title }}</h2>
-</a>
-<nav>{{- partial "nav.html" . -}}</nav>
+<nav class="nav-top">
+    {{- range .Site.Menus.main -}}
+    <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+    {{- end -}}
+</nav>
+
+<div class="header-main">
+    <h1 style="margin: 0">
+        <a href="/" style="text-decoration: none; color: inherit"
+            >{{ .Site.Title }}</a
+        >
+    </h1>
+    <p class="site-byline">{{ .Site.Params.description }}</p>
+</div>
+
+<hr class="pink-line" />
