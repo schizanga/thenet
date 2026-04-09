@@ -2,7 +2,7 @@
 date = "2025-08-30T01:36:08-04:00"
 title = "does that say virgo?"
 tags = ["virgo","astro notes","self"]
-draft = true
+draft = false
 
 +++
 

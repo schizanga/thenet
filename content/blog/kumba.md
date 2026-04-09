@@ -2,7 +2,7 @@
 date = "2026-01-28T01:19:27-04:00"
 title = "🏡 kumba"
 tags = ["career","community", "other"]
-draft = true
+draft = false
 
 +++
 When I first set out to throw kumba\* my goal was to lead a creative project that created financial opportunities for others who looked like me, doing the thing I loved most; shaking ass. I’m still in awe almost six months later - not because it was groundbreaking or revolutionary, but because **we did just that**.
