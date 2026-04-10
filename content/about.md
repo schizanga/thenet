@@ -4,7 +4,7 @@ Yagga. I'm a creative producer building systems, events, and projects in Toronto
 
 I _love_ bringing people together, building systems (digital and physical), and being useful.
 
-Some of my current hobbies are ruminating, ideating, brainstorming, astrology (it's at a point), tarot (also at a point), this project. 
+Some of my current hobbies are ruminating, ideating, brainstorming, astrology (it's at a point), tarot (also at a point), and this project. 
 
 ### What?
 
@@ -18,7 +18,7 @@ Because I love a cozy corner and I love the world wide web. Some of it. "Build y
 * I want to say whatever I want. 👀
 * I love sticking it to the man.
 
-## How?
+### How?
 
 I'm not a developer by any means, but I had Myspace and I'm incredibly resourceful. This website is a work in progress built with [Hugo](https://gohugo.io), an open-source static site generator and hosted on Github Pages. 
 

@@ -26,11 +26,12 @@ _This post was originally published to bysamchizanga.substack.com but Anil Dash 
 > 1\. A loud, obnoxious woman.
 > 
 > 2\. A woman of great stature, strength, and courage.
+
 Everybody look left. Everybody look right
 
 What do you see?
 
-I see the yappers offline and online, doing what they know best. I’m not the first to say this and I won’t be the last. It’s not a coinky-dink that text-based social media has [seen a re-emergence in the last few years](https://substack.com/inbox/post/159772708).
+I see the yappers offline and online, doing what they know best. I’m not the first to say this and I won’t be the last. It’s no coinky-dink that text-based social media has [seen a re-emergence in the last few years](https://substack.com/inbox/post/159772708).
 
 If you’re like me, somewhere deep inside you the light bulb has gone off, and the need to express yourself is pressing on you.
 
@@ -42,9 +43,13 @@ And I want in.
 
 * * *
 
-If you know of a sapphic who acts like this pls lmk tysm
+I discover myself when I fall short.
+>
+> — Kendrick Lamar[^1]
 
-“I discover myself when I fall short.” —Kendrick Lamar
+[^1]:6:16 in LA
+
+* * *
 
 There is a common sentiment I hear about myself that I have it figured it out but truthfully I’m often a dysregulated, disjointed, walking bag of nerves. Always uncertain if I’m speaking too loudly, or out of turn.
 
@@ -53,16 +58,11 @@ If I had it figured out, if I believed that the tiny voice inside my head had va
 Here are some of the ways that manifested:
 
 *   Letting the who-gives-a-fuck of it all be my guiding life principle.
-    
 *   Choosing not to advocate for my needs and passions.
-    
 *   Devaluing my creative work and output.
-    
 *   Emotionally isolating from everyone.
-    
 *   Waiting for a checkmark.
     
-
 If you think this sounds very unpleasant, you’d be absolutely correct. One day, after a particularly harrowing interpersonal fallout I looked in the mirror and thought to myself “… girl not this… whatever _this_ is.”
 
 #### **How close can I get to perfection while not being deterred by the** _**idea**_ **of imperfection?**
@@ -74,33 +74,23 @@ The only way I know how to find that balance is to put myself out into the world
 Here’s what you can expect as I figure it out:
 
 1.  **Introspective yapping** (essays)
-    
-Apologies to the community and my mother.
+   Apologies to the community and my mother.
         
 2.  **Resources gathering and sharing** (digital + analog)
-    
     I’m a tech gay with an incredible knack for finding things.
         
 3.  **My creative output** (all mediums)
-    
-     There are many; film, illustrations, writing[4](#footnote-4)
+    There are many; film, illustrations, writing [4](#footnote-4)
         
 4.  **Media reccos**
-    
-     This is a consumer household.
+    This is a consumer household.
         
 5.  **Lists** (believe the moon and the stars.)
-    
     Because Mercury????
         
 6.  **Divination** \[loosely held, strongly felt\]
     
-
 I’m not going to hold you, these will change. Expect me to change.
-
-
-![](https://substack-post-media.s3.amazonaws.com/public/images/1c269d97-48f1-400f-a59e-728d61fbc608_1120x679.jpeg)
-
 
 #### How can I show up so that you can show up along side me?
 

@@ -3,9 +3,11 @@ date = "2026-01-28T01:19:27-04:00"
 title = "🏡 kumba"
 tags = ["career","community", "other"]
 draft = false
-
 +++
-When I first set out to throw kumba\* my goal was to lead a creative project that created financial opportunities for others who looked like me, doing the thing I loved most; shaking ass. I’m still in awe almost six months later - not because it was groundbreaking or revolutionary, but because **we did just that**.
+
+_This blog post was originally published on bysamchizanga.substack.com and was unintentionally part of My Great Cancellation_
+
+When I first set out to throw kumba* my goal was to lead a creative project that created financial opportunities for others who looked like me, doing the thing I loved most; shaking ass. I’m still in awe almost six months later - not because it was groundbreaking or revolutionary, but because **we did just that**.
 
 It was a night of connecting, reconnecting, laughter, movement, and everything in between. Kumba came together because of the efforts and will of many people, besides myself. Ideation requires action to become a reality and despite having every opportunity and excuse to quit, I stayed the course. After years of undervaluing my headstrong, creative, and resilient nature – I started and finished a project.
 
