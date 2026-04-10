@@ -1,16 +1,9 @@
 +++
 title = "blog"
 date = 2026-01-28
-tags = ["community", "projects", "creative"]
+tags = [""]
 draft = false
 +++
-
-footer to the bottom of the page
-tags do not honour the correct posts ie #virgo is on on does that say virgo, not kumba
-steps to add social media icons
-steps for dark mode switch
-how to ensure this is responsive?
-search function possible?
 
 
 For a quick cheatsheet, check out https://simplemde.com/markdown-guide.
@@ -18,6 +11,7 @@ For a quick cheatsheet, check out https://simplemde.com/markdown-guide.
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+
 <!--more-->
 
 ## Headings

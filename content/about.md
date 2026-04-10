@@ -1,20 +1,21 @@
 ### Who?
 
-Yagga. I'm a creative producer building systems, events, and projects in Toronto Ontario. 
+I'm a [creative producer](https://calibre.careers/editorial/roles/creative-producer) based in Toronto Ontario. 
 
-I _love_ bringing people together, building systems (digital and physical), and being useful.
-
-Some of my current hobbies are ruminating, ideating, brainstorming, astrology (it's at a point), tarot (also at a point), and this project. 
+I _love_ bringing people together, building systems (digital and physical),and being useful.Some of my current hobbies are ruminating, ideating, brainstorming, scheming, astrology (it's at a point), tarot (also at a point), and this project. 
 
 ### What?
 
-Because I love a cozy corner and I love the world wide web. Some of it. "Build your own table" or whatever they say at the Roc Nation brunch.
+I love a cozy corner and 2% of the world wide web. The goal is always to "build your own table," or whatever they say at the Roc Nation brunch.
+I built this little site with Hugo. You like? 
 
+It’s part of a larger effort to divest from the systems that impose ownership  digital media. 
 ### Why? 
+
+Because how you do anything is how you do everything. 
 
 * I love tinkering and building things.
 * I want to own what is mine to own. Not everyday "you're the product."
-* I don't want or need to track your data.
 * I want to say whatever I want. 👀
 * I love sticking it to the man.
 
@@ -24,8 +25,6 @@ I'm not a developer by any means, but I had Myspace and I'm incredibly resourcef
 
 The current tech stack - HTML, CSS, a bit of SASS, and Go*. 
 
-## When 
+### When?
 
-Until we all get kicked off the internet. 
-
-Fun, no?
+Until we all get kicked off the internet.

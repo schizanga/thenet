@@ -123,11 +123,6 @@ blockquote {
     font-style: italic;
 }
 
-footer {
-    padding: 25px 0;
-    text-align: center;
-}
-
 /* ─── Utility Classes ────────────────────────────────────────────────────── */
 
 .title:hover {

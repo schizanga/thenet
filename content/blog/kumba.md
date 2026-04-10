@@ -1,11 +1,11 @@
 +++
-date = "2026-01-28T01:19:27-04:00"
-title = "🏡 kumba"
+date = "2026-01-15T01:19:27-04:00"
+title = "kumba"
 tags = ["career","community", "other"]
 draft = false
 +++
 
-_This blog post was originally published on bysamchizanga.substack.com and was unintentionally part of My Great Cancellation_
+_This blog post was originally published on bysamchizanga.substack.com on January 15th, 2026._
 
 When I first set out to throw kumba* my goal was to lead a creative project that created financial opportunities for others who looked like me, doing the thing I loved most; shaking ass. I’m still in awe almost six months later - not because it was groundbreaking or revolutionary, but because **we did just that**.
 

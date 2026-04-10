@@ -1,12 +1,91 @@
-<hr class="pink-line" />
-
-<div class="footer-container">
-    <div class="email-link">
-        <a href="mailto:sam@example.com" style="font-size: 1.5rem">✉️</a>
+<footer class="custom-footer">
+    <!-- Left  -->
+    <div class="footer-left">
+        <p>When all else fails, try again.</p>
     </div>
 
-    <p style="text-align: center; font-size: 0.8rem; opacity: 0.6"></p>
-    {{ if not (.Param "hideMadeWithLine") }}Made with
-    <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>{{
-    end }}
-</div>
+    <!-- Right  -->
+    <div class="footer-right">
+        <div class="footer-icons">
+            <a href="mailto:hi@samchizanga.com" class="social-icon">✉️</a>
+            <a href="https://instagram.com/bysamchizanga" class="social-icon">
+                {{ with resources.Get "svg/instagram.svg" }}{{ .Content |
+                safeHTML }}{{ end }}
+            </a>
+        </div>
+        <p class="made-with">
+            Made with
+            <a href="https://github.com/janraasch/hugo-bearblog/">Hugo Bear</a>
+        </p>
+    </div>
+</footer>
+
+<style>
+    .custom-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end; /* Aligns both columns to the bottom line */
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        font-size: 0.85rem;
+        line-height: 1.8;
+    }
+
+    /* Left Side Styling */
+    .footer-left p {
+        margin: 0;
+        opacity: 0.7;
+        text-align: left;
+    }
+
+    /* Right Side Styling */
+    .footer-right {
+        text-align: right;
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+        margin-bottom: 5px;
+        align-items: center;
+    }
+
+    .footer-icons svg {
+        width: 18px;
+        height: 18px;
+        fill: currentColor;
+    }
+
+    .social-icon {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.2rem; /* Size for the emoji mail icon */
+    }
+
+    .made-with {
+        margin: 0;
+        opacity: 0.7;
+    }
+
+    .made-with a {
+        color: inherit;
+        text-decoration: underline;
+    }
+
+    /* Mobile Responsive: Stacks columns on small screens */
+    @media (max-width: 600px) {
+        .custom-footer {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .footer-right {
+            text-align: left;
+        }
+        .footer-icons {
+            justify-content: flex-start;
+        }
+    }
+</style>
