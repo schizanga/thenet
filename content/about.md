@@ -8,7 +8,7 @@ Some of my current hobbies are ruminating, ideating, brainstorming, astrology (i
 
 ### What?
 
-Because I love a cozy corner and I love the world wide web. My intent isn't to disappear, in fact quite the opposite.
+Because I love a cozy corner and I love the world wide web. My intent isn't to disappear, in fact quite the opposite. "Build your own table" or whatever they say at the Roc Nation brunch.
 
 ### Why? 
 
