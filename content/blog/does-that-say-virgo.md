@@ -6,6 +6,8 @@ draft = false
 
 +++
 
+_This post was originally published to bysamchizanga.substack.com but Anil Dash said Substack is wack, so here I am._
+
 “No, Virago.”  
 “Why would anyone tattoo something like that on their body?!”
 
