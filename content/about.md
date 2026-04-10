@@ -22,7 +22,7 @@ Because I love a cozy corner and I love the world wide web. My intent isn't to d
 
 ## How?
 
-This website is a work in progress built with [Hugo](https://gohugo.io), an open-source static site generator and hosted with Github Pages. I'm not a dev by any means, but I had Myspace. Our current techk stack - HTML, CSS, a bit of SASS, and Go. 
+This website is a work in progress built with [Hugo](https://gohugo.io), an open-source static site generator and hosted with Github Pages. I'm not a dev by any means, but I had Myspace. Our current tech stack - HTML, CSS, a bit of SASS, and Go. 
 
 ## When 
 
