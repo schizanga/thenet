@@ -8,7 +8,7 @@ Some of my current hobbies are ruminating, ideating, brainstorming, astrology (i
 
 ### What?
 
-Because I love a cozy corner and I love the world wide web. My intent isn't to disappear, in fact quite the opposite. "Build your own table" or whatever they say at the Roc Nation brunch.
+Because I love a cozy corner and I love the world wide web. Some of it. "Build your own table" or whatever they say at the Roc Nation brunch.
 
 ### Why? 
 
@@ -20,7 +20,9 @@ Because I love a cozy corner and I love the world wide web. My intent isn't to d
 
 ## How?
 
-This website is a work in progress built with [Hugo](https://gohugo.io), an open-source static site generator and hosted with Github Pages. I'm not a dev by any means, but I had Myspace. Our current tech stack - HTML, CSS, a bit of SASS, and Go. 
+I'm not a developer by any means, but I had Myspace and I'm incredibly resourceful. This website is a work in progress built with [Hugo](https://gohugo.io), an open-source static site generator and hosted on Github Pages. 
+
+The current tech stack - HTML, CSS, a bit of SASS, and Go*. 
 
 ## When 
 
