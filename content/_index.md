@@ -1,4 +1,4 @@
 +++
 title = "home"
-draft = true
+draft = false
 +++

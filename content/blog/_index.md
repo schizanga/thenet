@@ -2,7 +2,7 @@
 title = "blog"
 date = 2026-01-28
 tags = ["community", "projects", "creative"]
-draft = true
+draft = false
 +++
 
 footer to the bottom of the page
