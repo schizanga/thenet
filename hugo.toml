@@ -77,3 +77,7 @@ ignoreErrors = ["error-disable-taxonomy"]
             name = "blog"
             url = "/blog"
             weight = 2
+        [[menu.main]]
+            name = "roadmap"
+                url = "/roadmap"
+                weight = 3
