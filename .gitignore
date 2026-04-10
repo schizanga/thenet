@@ -1,1 +1,12 @@
+# Hugo default output
+public/
+resources/_gen/
+
+# Hugo build lock file
+.hugo_build.lock
+
+# macOS system files
 .DS_Store
+
+# (Optional) If you use a stats file for CSS purging
+hugo_stats.js
