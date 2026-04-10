@@ -9,7 +9,8 @@ I _love_ bringing people together, building systems (digital and physical),and b
 I love a cozy corner and 2% of the world wide web. The goal is always to "build your own table," or whatever they say at the Roc Nation brunch.
 I built this little site with Hugo. You like? 
 
-It’s part of a larger effort to divest from the systems that impose ownership  digital media. 
+It’s part of a larger effort to divest from the systems that impose ownership over our creative output.
+
 ### Why? 
 
 Because how you do anything is how you do everything. 
@@ -21,7 +22,7 @@ Because how you do anything is how you do everything.
 
 ### How?
 
-I'm not a developer by any means, but I had Myspace and I'm incredibly resourceful. This website is a work in progress built with [Hugo](https://gohugo.io), an open-source static site generator and hosted on Github Pages. 
+I'm not a developer by any means but I had Myspace, Tdotwire, and I'm incredibly resourceful. This website is a work in progress built with [Hugo](https://gohugo.io), an open-source static site generator and hosted on Github Pages. 
 
 The current tech stack - HTML, CSS, a bit of SASS, and Go*. 
 
