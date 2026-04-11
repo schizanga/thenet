@@ -1,31 +1,20 @@
 +++
 date = "2026-04-10T17:00:18-04:00"
-title = "it didnt pay to not be the boss"
+title = "the cost of doing business"
 draft = false
-tags = ["reflection","career","self","saturn square"]
+tags = ["reflection","career","self","saturn", "7th"]
 
 +++
 
 On [January 15th, 2026](samchizanga.com/kumba) a former friend and one-time collaborator made a TikTok about me and the party we put on, called kumba. This is not a call out or a call in. I'm not seeking a mediation nor forgiveness. Take it or leave it.
 
-TL;DR - I was called a user, opportunist, vulture, and lord knows what else. I'm not here to rehash or debunk the details of that video. Those who were involved know the veracity of the details of that video. I was LITERALLY in the middle of scheduling posts for another event. It's 1 P.M in the afternoon. 17 TEXTS. Missed call, missed call. I thought someone had died?
+TL;DR - I was called a user, opportunist, vulture, and lord knows what else. I'm not here to rehash or debunk the details of that video. Those who were involved know the veracity of the details of that video. The whole thing was cruel in a deeply intimate way. A Tiktok is not how you want to receive first-time feedback. Not only that, exes, both persistent and aspiring, took to the comments to replicate a specific kind of violence that is reserved for Black fem folks and women. If _that_ is community - y'all got it and you do not have to worry about me. 
 
-The whole thing was cruel in a deeply intimate way. It's not how you want to receive first-time feedback. Not only that, exes, both persistent and aspiring, took to the comments to replicate a specific kind of violence that is reserved for Black fem folks and women. As disapointing as this was, it was eye-opening and helped shift something important and fundamental in me. 
+One thing is certain though - I'm going to say _it_, whatever _it_ is. Is the delivery always great? The Lord is working on me. The only decision I regret was apologizing. I have a lot to be sorry for in this life but [Cardi-B-pointing.gif]. Hollywood couldn't write it. The cost has been undeniable impact to my reputation but I'm willing to pay the cost. I'll find my solace in knowing who I am and what **_I_** did because for better or for worse it's in me. 
 
-One thing is certain though - I'm going to say _it_, whatever _it_ is. Is it always great? The Lord is working on me. The only decision I regret was apologizing. The cost has been undeniable impact to my reputation but I'm willing to pay the cost. I'll find my solace in knowing who I am and what **_I_** did because for better or for worse it's in me. 
+We give thanks, more life, blessings, and so on.
 
-And so we move.
-
-Astrologically speaking this happened in my 7th house. 
-
-Here are some topics that are ruled by the 7th house [^1]:
-
-* Marriage and long-term partnerships.
-* Business and professional relationships.
-* Love partners (spouses, lovers).
-* Adversaries, competitors, and opponents.
-
-Ha.
+### Meeting my Saturn Square
 
 That day was nestled in-between other events which were calling awareness to how I viewed myself and my self-worth. I suppose that awareness had always existed but this time there was a different clarity. Growth is rarely linear, I still find myself in valleys of self-doubt and constantly question if I and the things I spend my time on have any value. These days, the valleys are less frequent, which is why I can confidently make decisions about who I do or don't work with.
 
@@ -41,15 +30,19 @@ And why would they? I clearly was not valuing my own work, someone might as well
 
 What I create is a reflection of my will and my character. When I allow myself to show up as myself without seeking approval, it allows me to do my best work and exist in the relationships that are meant for me and me for them.
 
-As my self-worth deepens so has my inability to withstand imbalanced relationships of all kinds. When your self-worth is based on being liked you tend to be less direct about things that will make you unlikable. I was told it wasn't what I said, but how I said it. That I was too direct. In order to maintain sovereignty **I** will gladly make decisions that cause disruption to what threatens it, regardless of how it is received. That's the cost of doing business.
+As my self-worth deepens so has my inability to withstand imbalanced relationships of all kinds. When your self-worth is based on being liked you tend to be less direct about things that will make you unlikable. I was told it wasn't what I said, but how I said it. That I was too direct. In order to maintain sovereignty **I** will gladly make decisions that cause disruption to what threatens it, regardless of how it is received.
 
-Sometimes it’s ending a long-winded phone call with a person who dominates the conversation, other times it’s choosing to end unfulfilling connections regardless of the material loss. Will it always blow up in your face? No. Can it though? Yes. Trust me when I tell you; eating the discomfort of what is not being said to maintain any connection is manipulation and worse than that it is a poison to the health of ones self-being. 
+Now this was OTT - speaking the truth won't always blow up in your face. I seem to have a polarizing way of being. Can it though? Yes and it'll suck but trust me; eating the discomfort of what is not being said to maintain any connection is manipulation and worse than that it is a poison to the health of ones self-being. 
 
 Don't poison the well. 
 
 Sam
 
-Resources:
+P.S - Don't tell me, I don't care. 
 
-[1]. [What is the 7th house responsible for in astrology](https://www.atmanlab.social/post/what-is-the-7th-house-responsible-for-in-astrology)by Atman Lab
-[2]. [Saturn’s Square: Your Mid-30s Reality Check](https://isamanthajo.medium.com/saturns-square-your-mid-30s-reality-check-5eaad8ded245)by Samantha Jo.
+P.P.S - Don't ask me, I won't share.
+
+### Resources:
+
+1. [What is the 7th house responsible for in astrology](https://www.atmanlab.social/post/what-is-the-7th-house-responsible-for-in-astrology)by Atman Lab
+2. [Saturn’s Square: Your Mid-30s Reality Check](https://isamanthajo.medium.com/saturns-square-your-mid-30s-reality-check-5eaad8ded245)by Samantha Jo.
