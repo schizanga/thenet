@@ -26,13 +26,13 @@ Because the truth is the work is good. I'm an incredibly creative person and cap
 
 With time and distance I’ve realized that this event, like many other events in the last 5 years, was part of an overdue and necessary lesson - I can be hard-headed. I have repeatedly chosen creative, romantic, and business partnerships where I am in service to the ego of the other, rather than the actual work, which is a problem because I want to do something impactful through said work. I was functioning so that I could be liked and accepted - which is how I’d repeatedly end up in situations with people who undervalue **me**, don’t show up, take credit for my work. 
 
-And why would they? I clearly was not valuing my own work, someone might as well value it for me.
+And why wouldn't they? I clearly was not valuing my own work, someone might as well value it for me.
 
 What I create is a reflection of my will and my character. When I allow myself to show up as myself without seeking approval, it allows me to do my best work and exist in the relationships that are meant for me and me for them.
 
-As my self-worth deepens so has my inability to withstand imbalanced relationships of all kinds. When your self-worth is based on being liked you tend to be less direct about things that will make you unlikable. I was told it wasn't what I said, but how I said it. That I was too direct. In order to maintain sovereignty **I** will gladly make decisions that cause disruption to what threatens it, regardless of how it is received.
+As my self-worth deepens so has my inability to withstand imbalanced relationships of all kinds. When your self-worth is based on being liked you tend to be less direct about things that will make you unlikable. I was told it wasn't what I said, but how I said it. That I was too direct. In order to maintain sovereignty **I** will gladly make decisions that cause disruption to what threatens it, regardless of how it is received. Like... it gets to a point.
 
-Now this was OTT - speaking the truth won't always blow up in your face. I seem to have a polarizing way of being. Can it though? Yes and it'll suck but trust me; eating the discomfort of what is not being said to maintain any connection is manipulation and worse than that it is a poison to the health of ones self-being. 
+Now this was OTT - speaking the truth won't always blow up in your face. I seem to have a polarizing way of being. Yes and it'll suck but trust me; eating the discomfort of what is not being said to maintain any connection is manipulation of others and worse than that it is a poison to the health of ones self-being. 
 
 Don't poison the well. 
 
