@@ -10,7 +10,7 @@ On [January 15th, 2026](samchizanga.com/kumba) a former friend and one-time coll
 
 TL;DR - I was called a user, opportunist, vulture, and lord knows what else. I'm not here to rehash or debunk the details of that video. Those who were involved know the veracity of the details of that video. The whole thing was cruel in a deeply intimate way. A Tiktok is not how you want to receive first-time feedback. Not only that, exes, both persistent and aspiring, took to the comments to replicate a specific kind of violence that is reserved for Black fem folks and women. If _that_ is community y'all got it - you do not have to worry about me. 
 
-One thing is certain though - I'm going to say _it_, whatever _it_ is. Is the delivery always great? The Lord is working on me. The only decision I regret was apologizing. I have a lot to be sorry for in this life but [Cardi-B-pointing.gif]. Hollywood couldn't write it. The cost has been undeniable impact to my reputation but I'm willing to pay the cost. I'll find my solace in knowing who I am and what **_I_** did because for better or for worse it's in me. 
+One thing is certain though - I'm going to say _it_, whatever _it_ is. Is the delivery always great? The Lord is working on me. The only decision I regret was apologizing. I have a lot to be sorry for in this life but [Cardi-B-pointing.gif]. Hollywood couldn't write it. The cost has been undeniable impact to my reputation but I'm willing to pay the cost. I'll find solace in knowing who I am and what **_I_** did because for better or for worse it's in me. 
 
 We give thanks, more life, blessings, and so on.
 
@@ -44,5 +44,5 @@ P.P.S - Don't ask me, I won't share.
 
 ### Resources:
 
-1. [What is the 7th house responsible for in astrology](https://www.atmanlab.social/post/what-is-the-7th-house-responsible-for-in-astrology)by Atman Lab
-2. [Saturn’s Square: Your Mid-30s Reality Check](https://isamanthajo.medium.com/saturns-square-your-mid-30s-reality-check-5eaad8ded245)by Samantha Jo.
+1. [What is the 7th house responsible for in astrology](https://www.atmanlab.social/post/what-is-the-7th-house-responsible-for-in-astrology) by Atman Lab
+2. [Saturn’s Square: Your Mid-30s Reality Check](https://isamanthajo.medium.com/saturns-square-your-mid-30s-reality-check-5eaad8ded245) by Samantha Jo.
