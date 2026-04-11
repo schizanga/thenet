@@ -32,7 +32,7 @@ What I create is a reflection of my will and my character. When I allow myself t
 
 As my self-worth deepens so has my inability to withstand imbalanced relationships of all kinds. When your self-worth is based on being liked you tend to be less direct about things that will make you unlikable. I was told it wasn't what I said, but how I said it. That I was too direct. In order to maintain sovereignty **I** will gladly make decisions that cause disruption to what threatens it, regardless of how it is received. Even now, as I write this I know there will be someone who misunderstands me. So be it.
 
-Now this is OT - I have a polarizing way of being. Saying what the thing out loud won't always blow up in your face. Sure, it'll suck in the moment but trust me; eating the discomfort of what is not being said to maintain any connection is manipulation of others and worse than that it is a poison to the health of ones self-being. 
+Now this is OTT - I do have a polarizing way of being. Saying what the thing out loud won't always blow up in your face. Sure, it'll suck in the moment but trust me; eating the discomfort of what is not being said to maintain any connection is manipulation of others and worse than that it is a poison to the health of ones self-being. 
 
 Don't poison your well. 
 
