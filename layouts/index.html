@@ -1,22 +1,11 @@
 {{ define "main" }}
-<ul style="list-style: none; padding: 0">
-    {{ range (where .Site.RegularPages "Section" "in" (slice "blog"
-    "observations" "projects")) }}
-    <li
-        style="
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 0.8rem;
-        "
-    >
-        <a href="{{ .Permalink }}" style="font-weight: bold">{{ .Title }}</a>
-        <span style="font-family: monospace; opacity: 0.6"
-            >{{ .Date.Format "02 Jan, 2006" }}</span
-        >
-    </li>
-    {{ else }}
-    <li>No posts yet</li>
+<article>
+    <!-- This line pulls the content directly from your content/about.md file -->
+    {{ with .Site.GetPage "about.md" }}
+    <div class="about-page-content">{{ .Content }}</div>
     {{ end }}
-</ul>
+
+    <!-- Optional: If you still want a tiny list of posts at the very bottom,
+         you could put your old code here, otherwise leave it out! -->
+</article>
 {{ end }}
