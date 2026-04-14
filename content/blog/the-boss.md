@@ -1,8 +1,11 @@
 +++
-date = "2026-04-10T17:00:18-04:00"
+
 title = "the cost of doing business"
-draft = false
+date = "2026-04-10T17:00:18-04:00"
+description = ''
+categories = ['', '']
 tags = ["reflection","career","self","saturn", "7th"]
+draft = false
 
 +++
 

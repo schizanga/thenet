@@ -1,14 +1,24 @@
 +++
-title = ""
-date = 2026-01-28
-description = ''
-categories = ['', '']
-tags = [""]
-draft = false
+date = "2026-04-11T18:08:20-04:00"
+title = "Home"
+draft = true
+
+#
+tags = ["7th","astro notes","career","community","other","reflection","saturn","self","virgo",]
+
 
 +++
 
-  
+
+In 2020 I moved into my first apartment.
+In 2024 I moved out of my first apartment.
+
+I didn't know you could accumulate so much in such a short amount of time. Not to say I was hoarding (all respect to those who are working through it), but good grief. It didn't help that I lived on the 3rd floor of a townhouse - no elevator. 
+
+Moving out was a hellish experience and I vowed to myself never again.
+
+I love things but I do not love uneccesary things. I abslutely hate being a bag lady.
+
 For a quick cheatsheet, check out https://simplemde.com/markdown-guide.
 
 ---

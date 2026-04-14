@@ -5,12 +5,27 @@
     <small><a href="{{ "/" | relURL }}">Remove filter</a></small>
   {{ end }}
 
-  <ul style="list-style: none; padding: 0;">
-    <!-- Tag filtering -->
+  <ul style="list-style: none; padding: 0; margin-top: 2rem;">
     {{ range .Pages }}
-    <li class="post-item">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-      <span class="post-date">{{ .Date.Format "02 Jan, 2006" }}</span>
+    <li class="post-item" style="margin-bottom: 2rem;">
+
+      <!-- Container for Title and Date -->
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <a href="{{ .Permalink }}" style="font-weight: bold; font-size: 1.1rem;">
+          {{ .Title }}
+        </a>
+        <span class="post-date" style="opacity: 0.6; font-size: 0.9rem;">
+          {{ .Date.Format "02 Jan, 2006" }}
+        </span>
+      </div>
+
+      <!-- Description below the title -->
+      {{ if .Description }}
+      <div class="post-description" style="margin-top: 5px; opacity: 0.8; font-size: 0.95rem;">
+        {{ .Description }}
+      </div>
+      {{ end }}
+
     </li>
     {{ else }}
     <li>No posts yet</li>

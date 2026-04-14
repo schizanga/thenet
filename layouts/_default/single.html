@@ -1,31 +1,84 @@
 {{ define "main" }}
 <article>
-    <!-- 1. Meta row: Tags on left, Date on right -->
+    <!-- 1. Meta row: CATEGORY on left, Date on right -->
     {{ if eq .Section "blog" }}
-    <div class="post-meta">
-        <div class="post-tags">
-            {{ range (.GetTerms "tags") }}
-            <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+    <div
+        class="post-meta"
+        style="
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        "
+    >
+        <div class="post-categories">
+            {{ range (.GetTerms "categories") }}
+            <a
+                href="{{ .Permalink }}"
+                style="
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 0.8rem;
+                    letter-spacing: 1px;
+                "
+            >
+                {{ .LinkTitle }}
+            </a>
             {{ end }}
         </div>
-        <div class="post-date">{{ .Date.Format "01/02/06" }}</div>
+        <div class="post-date" style="opacity: 0.6">
+            {{ .Date.Format "01/02/06" }}
+        </div>
     </div>
     {{ end }}
 
-    <!-- 2. Post Title (Tightened spacing) -->
+    <!-- 2. Post Title -->
     <h1 style="margin: 0 0 1.1rem 0; font-size: 1.5rem">{{ .Title }}</h1>
 
-    <!-- 3. Post Content -->
+    <!-- 3. Post Description -->
+    {{ if .Description }}
+    <div
+        class="post-description"
+        style="
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            opacity: 0.7;
+            line-height: 1.4;
+        "
+    >
+        {{ .Description }}
+    </div>
+    {{ end }}
+
+    <!-- 4. Post Content -->
     <div class="post-content">{{ .Content }}</div>
 
-    <!-- 4. Previous/Next Navigation -->
+    <!-- 5. TAGS at the end of the post -->
+    {{ if .Params.tags }}
+    <div
+        class="post-tags"
+        style="margin-top: 3rem; border-top: 1px solid #eee; padding-top: 1rem"
+    >
+        <small style="opacity: 0.5">TAGS:</small>
+        {{ range (.GetTerms "tags") }}
+        <a
+            href="{{ .Permalink }}"
+            style="margin-left: 10px; text-decoration: none; opacity: 0.7"
+            >#{{ .LinkTitle }}</a
+        >
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <!-- 6. Previous/Next Navigation -->
     {{ if eq .Section "blog" }}
     <div
         style="
             display: flex;
             justify-content: space-between;
-            margin-top: 4rem;
+            margin-top: 2rem;
             font-weight: bold;
+            border-top: 1px solid #eee;
+            padding-top: 2rem;
         "
     >
         <div>

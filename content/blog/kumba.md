@@ -1,8 +1,12 @@
 +++
-date = "2026-01-15T01:19:27-04:00"
+
 title = "kumba"
+date = 2026-01-28
+description = ''
+categories = ['', '']
 tags = ["career","community", "other"]
 draft = false
+
 +++
 
 _This blog post was originally published on bysamchizanga.substack.com on January 15th, 2026._
