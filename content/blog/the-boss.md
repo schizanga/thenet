@@ -2,9 +2,9 @@
 
 title = "the cost of doing business"
 date = "2026-04-10T17:00:18-04:00"
-description = ''
-categories = ['', '']
-tags = ["reflection","career","self","saturn", "7th"]
+description = 'how my saturn square arrived'
+categories = ['work']
+tags = ["reflection","self","saturn", "7th"]
 draft = false
 
 +++

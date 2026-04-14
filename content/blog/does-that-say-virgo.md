@@ -3,8 +3,8 @@
 title = "does that say virgo?"
 date = "2025-08-30T01:36:08-04:00"
 description = 'and other questions that need an answer.'
-categories = ['', '']
-tags = ["virgo","astro notes","self"]
+categories = ['self', '']
+tags = ["virgo","astro notes"]
 draft = false
 
 +++

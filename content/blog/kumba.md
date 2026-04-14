@@ -2,9 +2,9 @@
 
 title = "kumba"
 date = 2026-01-28
-description = ''
-categories = ['', '']
-tags = ["career","community", "other"]
+description = 'another failed attempt at coming home'
+categories = ['community', '']
+tags = [""]
 draft = false
 
 +++
