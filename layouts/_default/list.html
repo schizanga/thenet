@@ -9,7 +9,6 @@
     {{ range .Pages }}
     <li class="post-item" style="margin-bottom: 2rem;">
 
-      <!-- Container for Title and Date -->
       <div style="display: flex; justify-content: space-between; align-items: baseline;">
         <a href="{{ .Permalink }}" style="font-weight: bold; font-size: 1.1rem;">
           {{ .Title }}
@@ -19,7 +18,6 @@
         </span>
       </div>
 
-      <!-- Description below the title -->
       {{ if .Description }}
       <div class="post-description" style="margin-top: 5px; opacity: 0.8; font-size: 0.95rem;">
         {{ .Description }}

@@ -1,14 +1,34 @@
 <footer class="custom-footer">
-    <!-- Left  -->
     <div class="footer-left">
         <p>When all else fails, try again.</p>
     </div>
 
-    <!-- Right  -->
     <div class="footer-right">
         <div class="footer-icons">
-            <a href="mailto:hi@samchizanga.com" class="social-icon">✉️</a>
-            <a href="https://instagram.com/bysamchizanga" class="social-icon">
+            <a
+                href="mailto:hi@samchizanga.com"
+                class="social-icon"
+                aria-label="Email"
+            >
+                <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                >
+                    <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+            </a>
+            <a
+                href="https://instagram.com/bysamchizanga"
+                class="social-icon"
+                aria-label="Instagram"
+            >
                 {{ with resources.Get "svg/instagram.svg" }}{{ .Content |
                 safeHTML }}{{ end }}
             </a>
@@ -20,72 +40,18 @@
     </div>
 </footer>
 
-<style>
-    .custom-footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end; /* Aligns both columns to the bottom line */
-        margin-top: 50px;
-        padding-top: 20px;
-        border-top: 1px solid #eee;
-        font-size: 0.85rem;
-        line-height: 1.8;
+<script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme === "light") {
+        body.classList.add("light-mode");
     }
-
-    /* Left Side Styling */
-    .footer-left p {
-        margin: 0;
-        opacity: 0.7;
-        text-align: left;
-    }
-
-    /* Right Side Styling */
-    .footer-right {
-        text-align: right;
-    }
-
-    .footer-icons {
-        display: flex;
-        justify-content: flex-end;
-        gap: 12px;
-        margin-bottom: 5px;
-        align-items: center;
-    }
-
-    .footer-icons svg {
-        width: 18px;
-        height: 18px;
-        fill: currentColor;
-    }
-
-    .social-icon {
-        text-decoration: none;
-        color: inherit;
-        font-size: 1.2rem; /* Size for the emoji mail icon */
-    }
-
-    .made-with {
-        margin: 0;
-        opacity: 0.7;
-    }
-
-    .made-with a {
-        color: inherit;
-        text-decoration: underline;
-    }
-
-    /* Mobile Responsive */
-    @media (max-width: 600px) {
-        .custom-footer {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 20px;
-        }
-        .footer-right {
-            text-align: left;
-        }
-        .footer-icons {
-            justify-content: flex-start;
-        }
-    }
-</style>
+    toggle.addEventListener("click", () => {
+        body.classList.toggle("light-mode");
+        localStorage.setItem(
+            "theme",
+            body.classList.contains("light-mode") ? "light" : "dark",
+        );
+    });
+</script>

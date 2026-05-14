@@ -1,6 +1,5 @@
 {{ define "main" }}
 <article>
-    <!-- 1. Meta row: CATEGORY on left, Date on right -->
     {{ if eq .Section "blog" }}
     <div
         class="post-meta"
@@ -9,7 +8,7 @@
             justify-content: space-between;
             margin-bottom: 0.5rem;
         "
-    >
+    ></div>
         <div class="post-categories">
             {{ range (.GetTerms "categories") }}
             <a

@@ -10,3 +10,4 @@ resources/_gen/
 
 # (Optional) If you use a stats file for CSS purging
 hugo_stats.js
+static/

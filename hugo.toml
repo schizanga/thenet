@@ -6,7 +6,7 @@ baseURL = "https://samchizanga.com/"
 theme = 'hugo-bearblog'
 
 # Basic metadata configuration for your blog.
-title = "Hi, I'm Sam 👋🏾🙂"
+title = "Hi, I'm Sam."
 author = "Sam Chizanga"
 copyright = "Copyright © 2026."
 languageCode = "en-US"
@@ -23,7 +23,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
- description = "Personal essays, esoteric ramblings, and useful 2 am lists. (she/they)"
+ description = "esoteric ramblings and useful lists (she/they)"
 
   # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
   # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
@@ -70,19 +70,15 @@ ignoreErrors = ["error-disable-taxonomy"]
       [caches.images]
         dir = ':cacheDir/images'
 
-               [[menu.main]]
-            name = "about"
-            url = "/about"
-            weight = 1
         [[menu.main]]
             name = "blog"
             url = "/blog"
-            weight = 2
+            weight = 1
+       [[menu.main]]
+           name = "resources"
+           url = "/resources"
+           weight = 3
         [[menu.main]]
-            name = "roadmap"
-                url = "/roadmap"
-                weight = 3
-         [[menu.main]]
-            name = "portfolio"
-            url = "https://sam-chizanga.squarespace.com/"
-            weight = 4
+            name = "about"
+            url = "/about"
+            weight = 2

@@ -2,15 +2,14 @@
 
 I'm a [creative producer](https://calibre.careers/editorial/roles/creative-producer) based in Toronto Ontario. 
 
-I _love_ bringing people together, building systems (digital and physical),and being useful.Some of my current hobbies are ruminating, ideating, brainstorming, scheming, astrology (it's at a point), tarot (also at a point), and this project. 
+I _love_ bringing people together, building systems (digital and physical),and being useful. Some of my current hobbies are ruminating, ideating, brainstorming, scheming, astrology (it's at a point), tarot (also at a point), and this project. 
 
 ### What?
 
 I love a cozy corner and 2% of the world wide web. This is my cozy corner.
 
 Here you'll find my work, my ideas, thoughts, and more. 
-
-### Why? 
+### Why?
 
 Because how you do anything is how you do everything. 
 

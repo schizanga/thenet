@@ -1,152 +1,188 @@
 <style>
     :root {
         --width: 720px;
-        --font-main: Verdana, sans-serif;
-        --font-secondary: Verdana, sans-serif;
-        --font-scale: 1em;
+        --font-main: "Inter", sans-serif;
+        --font-mono: "Roboto Mono", monospace;
         --background-color: #000000;
-        --heading-color: #222;
-        --text-color: #444;
+        --text-color: #ffffff;
+        --heading-color: #ffffff;
         --link-color: #3273dc;
-        --visited-color: #8b6fcb;
-        --blockquote-color: #222;
     }
 
-    @media (prefers-color-scheme: dark) {
-        :root {
-            --background-color: #000000;
-            --heading-color: #fffff;
-            --text-color: #eaeaea;
-            --link-color: #8cc2dd;
-            --visited-color: #8b6fcb;
-            --blockquote-color: #ccc;
-        }
+    body.light-mode {
+        --background-color: #ffffff;
+        --text-color: #000000;
+        --heading-color: #000000;
     }
 
     body {
-        font-family: var(--font-secondary);
-        font-size: var(--font-scale);
+        font-family: var(--font-main);
+        background-color: var(--background-color);
+        color: var(--text-color);
+        max-width: var(--width);
         margin: auto;
         padding: 20px;
-        max-width: var(--width);
-        text-align: left;
-        background-color: var(--background-color);
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-        line-height: 1.5;
-        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        line-height: 1.6;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-family: var(--font-main);
-        color: var(--heading-color);
+    main {
+        flex: 1;
     }
 
+    /* Remove all default underlines */
     a {
         color: var(--link-color);
-        cursor: pointer;
         text-decoration: none;
+        cursor: pointer;
     }
 
     a:hover {
         text-decoration: underline;
     }
 
-    nav a {
-        margin-right: 8px;
+    .nav-top {
+        text-align: right;
+        margin-bottom: 2rem;
+    }
+    .nav-top a {
+        margin-left: 15px;
+        font-weight: bold;
     }
 
-    strong,
-    b {
-        color: var(--heading-color);
+    .header-main {
+        margin-bottom: 1rem;
+    }
+    .site-byline {
+        opacity: 0.7;
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
     }
 
-    button {
+    .post-header-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+    }
+
+    .post-header-meta .section-name {
+        color: var(--link-color);
+        font-weight: 700;
+    }
+
+    .post-header-title {
+        font-size: 2rem;
+        margin: 0 0 0.5rem 0;
+        line-height: 1.2;
+    }
+
+    .post-header-description {
+        font-style: italic;
+        opacity: 0.8;
+        margin-bottom: 2rem;
+    }
+
+    .post-tags {
+        margin: 1.5rem 0;
+    }
+
+    .post-tags a {
+        text-transform: lowercase;
+        margin-right: 12px;
+        font-weight: 700;
+        font-size: 0.9rem;
+    }
+
+    .custom-post-list {
+        list-style: none;
+        padding: 0;
+        margin: 40px 0;
+    }
+    .post-item {
+        margin-bottom: 2.5rem;
+    }
+    .post-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .post-title {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: var(--link-color);
+    }
+    .post-date {
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        opacity: 0.6;
+    }
+    .post-summary {
+        margin: 0.3rem 0 0 0;
+        opacity: 0.8;
+        font-size: 0.95rem;
+    }
+
+    .custom-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 50px;
+        padding: 20px 0;
+        border-top: 1px solid rgba(128, 128, 128, 0.3);
+        font-size: 0.85rem;
+    }
+
+    .footer-left p {
         margin: 0;
-        cursor: pointer;
+        opacity: 0.7;
     }
-
-    time {
-        font-family: monospace;
-        font-style: normal;
-        font-size: 15px;
+    .footer-right {
+        text-align: right;
     }
-
-    main {
-        line-height: 1.6;
+    .footer-icons {
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+        margin-bottom: 8px;
     }
-
-    table {
-        width: 100%;
+    .social-icon {
+        color: inherit;
+        font-size: 1.2rem;
+    }
+    .made-with {
+        margin: 0;
+        opacity: 0.7;
     }
 
     hr {
         border: 0;
-        border-top: 1px dashed;
+        border-top: 1px solid rgba(128, 128, 128, 0.3);
+        margin: 2rem 0;
     }
 
-    img {
-        max-width: 100%;
-    }
-
-    code {
-        font-family: monospace;
-        padding: 2px;
-        border-radius: 3px;
-    }
-
-    blockquote {
-        border-left: 1px solid #999;
-        color: var(--blockquote-color);
-        padding-left: 20px;
-        font-style: italic;
-    }
-
-    footer {
-        padding: 25px 0;
-        text-align: center;
-    }
-
-    .title:hover {
-        text-decoration: none;
-    }
-
-    .title h1 {
-        font-size: 1.5em;
-    }
-
-    .inline {
-        width: auto !important;
-    }
-
-    .highlight,
-    .code {
-        border-radius: 3px;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        overflow-x: auto;
-    }
-
-    /* blog post list */
-    ul.blog-posts {
-        list-style-type: none;
-        padding: unset;
-    }
-
-    ul.blog-posts li {
-        display: flex;
-    }
-
-    ul.blog-posts li span {
-        flex: 0 0 130px;
-    }
-
-    ul.blog-posts li a:visited {
-        color: var(--visited-color);
+    @media (max-width: 600px) {
+        .post-row,
+        .post-header-meta {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .custom-footer {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .footer-right {
+            text-align: left;
+        }
+        .footer-icons {
+            justify-content: flex-start;
+        }
     }
 </style>
