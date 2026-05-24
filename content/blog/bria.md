@@ -2,10 +2,10 @@
 
 title = "saying the hard thing out loud"
 date = "2025-08-30T01:36:08-04:00"
-description = 'when the stalking gets to a point.'
+description = 'it gets to a point.'
 categories = ['self', '']
 tags = ["virgo","astro notes"]
-draft = false
+draft = true
 
 +++
 
@@ -39,9 +39,10 @@ Sam
 
 October 24th 2024
 
-I want to start by saying how truly sorry I am for what I’ve done. I hurt you in more ways that one and I deeply regret that. Looking back, I see how selfish and wrong my actions were, and I can’t take back what happened. But I want you to know how sorry I am for the pain I caused you.
+```I want to start by saying how truly sorry I am for what I’ve done. I hurt you in more ways that one and I deeply regret that. Looking back, I see how selfish and wrong my actions were, and I can’t take back what happened. But I want you to know how sorry I am for the pain I caused you.
 
 Specifically, I’m sorry for telling Lucille about your status. That was a serious violation of your trust, and I know I betrayed you. I should’ve kept your privacy sacred, and I didn’t.
+
 On top of that, I asked Lucille not to tell you, which was even more of a betrayal. I made that choice out of fear and shame, and I now see how damaging that was. I also made the mistake of sharing the information with Dan, thinking she already knew, which was a careless assumption. I shouldn’t have made that decision without checking, and I regret it deeply. I want you to know I haven’t told anyone else, and I will never again make that kind of mistake.
 Looking back, I realize I didn’t communicate honestly with you about what was going on with me. When I realized I might have an STI, fear and shame clouded my judgment, and I made choices that only hurt you more. I didn’t communicate my fears or needs in a way that respected your boundaries, and instead, I let resentment build up. I misread your actions, got frustrated, and made assumptions. All of this was my fault, and I see now that I should’ve been open and vulnerable with you.
 
@@ -72,10 +73,9 @@ Again, I am truly sorry for everything.
 
 Take care of yoursel
 
-Samantha
+Samantha```
 
 **The Final Reply**
-
 
 ```ive been in steady contact with TNG. This is not the truth so idk why you’re lying
 
