@@ -77,7 +77,7 @@ Samantha
 **The Final Reply**
 
 
-ive been in steady contact with TNG. This is not the truth so idk why you’re lying
+```ive been in steady contact with TNG. This is not the truth so idk why you’re lying
 
 lolllll
 
