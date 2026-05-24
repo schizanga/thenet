@@ -9,7 +9,7 @@ draft = true
 
 +++
 
-I am tired of carrying this alone. 
+I am tired of carrying this alone.
 
 I made a significant mistake of disclosing personal information that I should have never ever disclosed. It was wrong, it was fucked up, and I will hold that truth. I wouldn't want the same done to me. They belive that I am intentionally malicious, that I disclosed that information because of how much I desired them. 
 
