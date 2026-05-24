@@ -1,6 +1,7 @@
 +++
 
 title = "saying the hard thing out loud"
+<<<<<<< HEAD
 date = "2025-08-30T01:36:08-04:00"
 description = 'it gets to a point.'
 categories = ['self', '']
@@ -10,17 +11,37 @@ draft = true
 +++
 
 I am tired of carrying this alone.
+=======
+date = "2025-05-23T01:36:08-04:00"
+description = 'when the stalking gets to a point.'
+categories = ['self']
+tags = ["virgo","astro notes"]
+draft = false
+
++++
+
+I'm tired of carrying this alone. 
+>>>>>>> 49db23d (update)
 
 I made a significant mistake of disclosing personal information that I should have never ever disclosed. It was wrong, it was fucked up, and I will hold that truth. I wouldn't want the same done to me. They belive that I am intentionally malicious, that I disclosed that information because of how much I desired them. 
 
 That said, this person has been trying to punish me. I can only assume the depths they have gone but the additional burner accounts showed me that something was very wrong.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 49db23d (update)
 They continue to lie about me. 
 They tell people I am the same as a known abuser. 
 They bought tickets to the event I put on to try hoping to intimidate me. 
 They created a BURNER account to go to the comments of a person they disparaged to leave violent comments about me. 
+<<<<<<< HEAD
 They feel entitled to speak about my life and WHO I have in my life. How would someone I have blocked know anything about me?
+=======
+They feel entitled to speak about my life and WHO I have in my life. 
+
+I've been deeling with a stalker SINCE I revoked their access.
+>>>>>>> 49db23d (update)
 
 I engaged with the idea of a mediation for far longer than they deserved because there were mutual friendships I thought had value at the time. Those people turned out to be reflections of them, their enablers, or cowards. 
 
@@ -28,11 +49,15 @@ I wrote an apology after repeatedly attempting to understand what was going on, 
 
 Below you will find that apology and the reply I received from them. Everything that is redacted is because I made a promise to never disclose this information again. 
 
+<<<<<<< HEAD
 I'm tired of yall publcily playing with me.
 
 Below - the apology I sent an apology I worked on for months with my therapist mind you wasting my fucking money. and the reply I received from them. Let me know if you'd like me to go back further to when we first met in person. 
 
 Funnily enough, I went on to work alongside TNG earlier this year.  
+=======
+Below - the apology I sent an apology I worked on for months with my therapist mind you wasting my fucking money and the reply I received from them. The entire timeline once I finished it was 219 pages.  
+>>>>>>> 49db23d (update)
 
 Sam
 
@@ -40,10 +65,16 @@ Sam
 
 October 24th 2024
 
+<<<<<<< HEAD
 ```I want to start by saying how truly sorry I am for what I’ve done. I hurt you in more ways that one and I deeply regret that. Looking back, I see how selfish and wrong my actions were, and I can’t take back what happened. But I want you to know how sorry I am for the pain I caused you.
 
 Specifically, I’m sorry for telling Lucille about your status. That was a serious violation of your trust, and I know I betrayed you. I should’ve kept your privacy sacred, and I didn’t.
 
+=======
+I want to start by saying how truly sorry I am for what I’ve done. I hurt you in more ways that one and I deeply regret that. Looking back, I see how selfish and wrong my actions were, and I can’t take back what happened. But I want you to know how sorry I am for the pain I caused you.
+
+Specifically, I’m sorry for telling Lucille about your status. That was a serious violation of your trust, and I know I betrayed you. I should’ve kept your privacy sacred, and I didn’t.
+>>>>>>> 49db23d (update)
 On top of that, I asked Lucille not to tell you, which was even more of a betrayal. I made that choice out of fear and shame, and I now see how damaging that was. I also made the mistake of sharing the information with Dan, thinking she already knew, which was a careless assumption. I shouldn’t have made that decision without checking, and I regret it deeply. I want you to know I haven’t told anyone else, and I will never again make that kind of mistake.
 Looking back, I realize I didn’t communicate honestly with you about what was going on with me. When I realized I might have an STI, fear and shame clouded my judgment, and I made choices that only hurt you more. I didn’t communicate my fears or needs in a way that respected your boundaries, and instead, I let resentment build up. I misread your actions, got frustrated, and made assumptions. All of this was my fault, and I see now that I should’ve been open and vulnerable with you.
 
@@ -74,11 +105,20 @@ Again, I am truly sorry for everything.
 
 Take care of yoursel
 
+<<<<<<< HEAD
 Samantha```
 
 **The Final Reply**
 
 ```ive been in steady contact with TNG. This is not the truth so idk why you’re lying
+=======
+Samantha
+
+**The Final Reply**
+
+
+ive been in steady contact with TNG. This is not the truth so idk why you’re lying
+>>>>>>> 49db23d (update)
 
 lolllll
 
@@ -137,3 +177,10 @@ go “i’m sorry i hurt you i only did it because I felt _______” (a valid an
 Please go hit up [redacted name] that’s your prize wish you two a steady stream of 23year old partners who will leave you when their frontal lobes develop.
 Miss me with the boo hoo bullshit and don’t let yourself cross my path again
 i’ll laugh you right out of the fucking building you coward ass bullshit ass fuck ass clown.
+<<<<<<< HEAD
+=======
+
+✌🏾👋🏾
+
+**Funnily enough, I went on to work alongside TNG earlier this year and wouldn't you know it - they don't disclose the actions of either party under any circumstances. Ethics and all of that.**
+>>>>>>> 49db23d (update)
