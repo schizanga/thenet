@@ -1,17 +1,6 @@
 +++
 
 title = "saying the hard thing out loud"
-<<<<<<< HEAD
-date = "2025-08-30T01:36:08-04:00"
-description = 'it gets to a point.'
-categories = ['self', '']
-tags = ["virgo","astro notes"]
-draft = true
-
-+++
-
-I am tired of carrying this alone.
-=======
 date = "2025-05-23T01:36:08-04:00"
 description = 'when the stalking gets to a point.'
 categories = ['self']
@@ -21,7 +10,6 @@ draft = false
 +++
 
 I'm tired of carrying this alone. 
->>>>>>> 49db23d (update)
 
 I made a significant mistake of disclosing personal information that I should have never ever disclosed. It was wrong, it was fucked up, and I will hold that truth. I wouldn't want the same done to me. They belive that I am intentionally malicious, that I disclosed that information because of how much I desired them. 
 
