@@ -82,7 +82,3 @@ ignoreErrors = ["error-disable-taxonomy"]
            name = "resources"
            url = "/resources"
            weight = 3
-        [[menu.main]]
-           name = "kumba"
-           url = "https://kumba.agency"
-           weight = 4

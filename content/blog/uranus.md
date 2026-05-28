@@ -37,6 +37,6 @@ That is what I wanted to build with kumba- a home and space for Black queers and
 
 Uranus has now entered Gemini in my house of introspection and even in this small window - the process has been quite illuminating. I have spent a majority of the last 3 years alone. Sometimes self-imposed, sometimes not. The more time I’ve spent alone, the clearer my self-concept has become and the easier it has become to convince myself that I don’t deserve to belong anywhere.  Rationally, I know that isn’t true but it is where I am. 
 
-In a world where Black women are constantly and consistently being othered, all I can think of is how to do something bigger than me, for people like me. People will tell me it’s not that deep, but for me it always is. Now though, I need to take care of myself, make friends, find joy instead of ramming my head into a wall -  because the 2 year old version is out there somewhere and she is waiting for me. 
+In a world where Black women are constantly and consistently being othered, all I can think of is how to do something bigger than me, for people like me. People will tell me it’s not that deep, but for me it always is. Now though, I need to take care of myself, make friends, find joy instead of ramming my head into a wall -  because the 2 year old version is out there somewhere and she is gonna be pissed if I don't figure it out.
 
 Sam
