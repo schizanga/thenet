@@ -1,17 +1,20 @@
 ### Who?
 
+
 I'm a [creative producer](https://calibre.careers/editorial/roles/creative-producer) based in Toronto Ontario. 
 
-I _love_ bringing people together, building systems (digital and physical),and being useful. Some of my current hobbies are ruminating, ideating, brainstorming, scheming, astrology (it's at a point), tarot (also at a point), and this project. 
+I _love_ bringing people together, building systems (digital and physical),and being useful. Some of my current hobbies are ruminating, ideating, brainstorming, scheming.
+
+Astrology, patterns, and common sense define my work. 
 
 ### What?
 
 I love a cozy corner and 2% of the world wide web. This is my cozy corner.
 
 Here you'll find my work, my ideas, thoughts, and more. 
-### Why?
 
-Because how you do anything is how you do everything. 
+### Why?
+Because how you do anything is how you do everything. Aren't you sick of not owning a house AND your data? I am. 
 
 * I love tinkering and building things.
 * I want to own what is mine to own. Not everyday "you're the product."
@@ -28,7 +31,6 @@ The current tech stack : HTML, CSS, a bit of SASS, and Go*.
 
 Until we all get kicked off the internet.
 
-
 ### Last But Not Least
 
-Free Gaza, Free Sudan, Free Congo, Landback, and Reparations for Black America Today.
+Liberate all Black and Brown people from the burdens of white supremacy.
