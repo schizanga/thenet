@@ -9,21 +9,21 @@ draft = false
 
 WHEW.
 
-Uranus, the planet of disruption, upheaval, and bullshit first entered Taurus, the sign of stability, certainty, MONEY, and MARKETS in May 2018. This transit happened in my 11th house; the house of long term goals, aspirations, and community.
+Uranus, the planet of disruption, upheaval, and "be so for real" entered Taurus, the sign of stability, certainty, MONEY, and MARKETS in May 2018. This transit happened in my 11th house; the house of long term goals, aspirations, and community. 
 
 Chat, [Uranus and Taurus are not gang](https://www.astrologyfromthesoul.com/post/uranus-in-taurus-in-the-signs-the-final-shakeup-05-2018-04-2026).
 
-Since 2018 I have not had my feet underneath me. At the top of this transit I was in the depths of the “Black girl, white manager on a promotion path” cycle. An overworked, undervalued, scapegoat. By October 2018 a manager I had reported to for roughly 3 months put me on a P.I.P. If you've never heard of a P.I.P it's corporate for *"your ass is grass"*. I had just shipped a supplementary project for the biggest company wide project, at the time. Causation? Correlation? Who cares.
+June 2018: I was in the depths of the “Black girl, white manager on a promotion path” cycle. Didn't know it at the time but I was an overworked, undervalued, scapegoat. By October 2018 a manager I had reported to for roughly 3 months put me on a P.I.P. If you've never heard of a P.I.P it's corporate for *"your ass is grass"*. I had just shipped a supplementary project for the biggest company wide project, at the time. Thought I was heading for a promotion. Causation? Correlation? Who cares, I have not had my feet underneath me since then.
 
 I was on the brink of literal physical collapse. At my unhealthiest weight I was over 350 lbs. I was unhappy. I was angry and mean because of it. The choices and decisions I made reflected this and over the years I became more socially inverted and insecure. I stopped aspiring and asking and made myself as small as I possibly could. This led to outcomes and consequences I didn’t want and on and on it went.
 
 At my core I am the 2 year old version of me: ‘precocious’, curious, and funny*. Stubborn. Jovial. In 2018, I was none of those things. That is what grief costs you. 
 
-Grief compounds and when you don’t know what it is - it will wreck havoc on your sense of self and wellbeing. It's a shroud, a fog. You get into situations you would have never been in, had you been sound of mind. 2018 - 2024 was crazy, don't worry we'll get there. 
+Grief compounds and when you don’t know what it is - it will wreck havoc on your sense of self and wellbeing. It's a shroud, a fog. You get into situations you would have never been in, had you been sound of mind. 2018 - 2024 was a mess, don't worry we'll get there. 
 
-In early Feb 2025 I received this email that was for all intents and purposes: a cold bucket of water, full of ice cubes, and razors. With each read l realized I had been allowing life to happen to me rather than participating in it. More than that, the dreams I  had to build creative and interesting things became distant memories.
+In early Feb 2025 I received this email that was for all intents and purposes: a cold bucket of water, full of ice cubes, and razors. With each read l realized I had been allowing life to happen to me rather than participating in it. Making illogical decisions, martyring myself. More than that, the dreams I  had to build creative and interesting things became distant memories.
 
-In my grief I had unconsciously agreed to be a recipient of the least that could be afforded to me. I have spent the last year, trying to get back to the person who knows where she wants to go, who knows where love grows.
+In my grief I had unconsciously agreed to be a recipient of the least that could be afforded to me. I have spent the last year trying to get back to the person who knows where she wants to go, who knows where love grows.
 
 > **"If you want to be somebody, if you want to go somewhere? You better wake up and pay attention."**
 
