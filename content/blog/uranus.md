@@ -19,9 +19,11 @@ I was on the brink of literal physical collapse. At my unhealthiest weight I was
 
 At my core I am the 2 year old version of me: ‘precocious’, curious, and funny*. Stubborn. Jovial. In 2018, I was none of those things. That is what grief costs you. 
 
-Grief compounds and when you don’t know what it is - it will wreck havoc on your sense of self and wellbeing. You get into situations you would have never been in, had you been sound of mind. Between 2018 and 2024 I came across so many incredible opportunities that I fumbled, many (not all) interpersonal relationships that only knew how to extract, and a very diminished self-esteem.Even more than that, the dreams I once had to build a thing were distant memories.
+Grief compounds and when you don’t know what it is - it will wreck havoc on your sense of self and wellbeing. It's a shroud, a fog. You get into situations you would have never been in, had you been sound of mind. 
 
-In early Feb 2025 I received this email that was for all intents and purposes: a cold bucket of water, full of ice cubes, and razors. With each read l realized I had been allowing life to happen to me rather than participating in it. In my grief I had unconsciously agreed to be a recipient of the least that could be afforded to me. Opportunities came and went because I wasn’t fully immersed in the experience of having them. I had been putting up with people’s bullshit for forever and a day, instead of pursuing what was meant for me because I didn’t know who I was. I have spent the last year, trying to get back to that person. 
+In early Feb 2025 I received this email that was for all intents and purposes: a cold bucket of water, full of ice cubes, and razors. With each read l realized I had been allowing life to happen to me rather than participating in it. Between 2018 and 2024 I came across so many incredible opportunities that I fumbled, many (not all) interpersonal relationships that only knew how to extract, and a very diminished self-esteem. More than that, the dreams I  had to build creative and interesting things became distant memories.
+
+In my grief I had unconsciously agreed to be a recipient of the least that could be afforded to me. I have spent the last year, trying to get back to the person who knows where she wants to go.
 
 > **"If you want to be somebody, if you want to go somewhere? You better wake up and pay attention."**
 
@@ -35,10 +37,8 @@ That word has been chasing me, dude. Seriously.
 
 That is what I want to build, instead I have been spiralling and doubting every move I make. Something sustainable and useful and honest and caring and beautiful and creative and indulgent and gay. Something bigger than me, for people like me.
 
-Uranus has now entered Gemini in my house of introspection and even in this small window - the process has been illuminating. I have spent a majority of the last 3 years alone. Sometimes self-imposed, sometimes not. The more time I’ve spent alone, the clearer my self-concept has become. In that same isolation it has also become easier to convince myself that I don’t deserve to belong anywhere. I know that isn’t true but it is where I am. 
+Uranus has now entered Gemini in my house of introspection and even in this small window - the process has been illuminating. I have spent a majority of the last 3 years alone. Sometimes self-imposed, sometimes not. The more time I’ve spent alone, the clearer my self-concept has become. In that same isolation convincing myself that I don’t deserve to belong anywhere has become easier.  Which means I am underresourced in a way that is important to me and I need to get back to that way.
 
-Which means I am underresourced in a way that is important to me and I need to get back to that way.
-
-For me it is always that deep. What can I say? I am a Cancer rising after all. Instead of spiralling I am choosing to take care of myself, to make friends, find joy instead of ramming my head into a wall -  because the 2 year old version is out there somewhere and she is gonna be pissed if I don't figure it out.
+For me it's always that deep. What can I say? I am a Cancer rising after all. Instead of spiralling I am choosing to take care of myself, to make friends, find and return to joy, instead of whatever the hell I've been doing - because the 2 year old version is out there somewhere and she is gonna be pissed if I don't figure it out.
 
 Sam
