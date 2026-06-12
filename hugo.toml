@@ -70,15 +70,20 @@ ignoreErrors = ["error-disable-taxonomy"]
       [caches.images]
         dir = ':cacheDir/images'
 
+
         [[menu.main]]
             name = "blog"
             url = "/blog"
-            weight = 1
+            weight = 2
         [[menu.main]]
             name = "about"
             url = "/about"
-            weight = 2
+            weight = 3
        [[menu.main]]
-           name = "resources"
-           url = "/resources"
-           weight = 3
+           name = "library"
+           url = "/library"
+           weight = 4
+        [[menu.main]]
+               name = "🛖"
+               url = "/"
+               weight = 5

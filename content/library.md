@@ -1,5 +1,5 @@
 +++
-title = "esoteric"
+title = ""
 description = ['articles', 'calculators']
 categories = ['', '']
 tags = ["library"]
@@ -9,7 +9,6 @@ draft = false
 +++
 
 ### Calculators and Platforms
-Platforms and tools I trust.
 
 * [Cafe Astrology](https://astro.cafeastrology.com/natal.php)
 
@@ -24,10 +23,9 @@ Platforms and tools I trust.
 > You know what the swiss ephemiris is, babe. Welcome.
 
 ### Articles
-Sources that are referenced in my writing.
 
 1. [What is the 7th house responsible for in astrology](https://www.atmanlab.social/post/what-is-the-7th-house-responsible-for-in-astrology) by Atman Lab
 
-2. [Saturn’s Square: Your Mid-30s Reality Check](https://isamanthajo.medium.com/saturns-square-your-mid-30s-reality-check-5eaad8ded245) by Samantha Jo.
+2. [Saturn’s Square: Your Mid-30s Reality Check](https://isamanthajo.medium.com/saturns-square-your-mid-30s-reality-check-5eaad8ded245) by Samantha Jo
 
 3. [Uranus in Taurus in the Signs: The Final Shakeup](https://www.astrologyfromthesoul.com/post/uranus-in-taurus-in-the-signs-the-final-shakeup-05-2018-04-2026) by Astrology From the Soul

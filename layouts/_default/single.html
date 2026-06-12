@@ -30,10 +30,9 @@
     </div>
     {{ end }}
 
-    <!-- 2. Post Title -->
+
     <h1 style="margin: 0 0 1.1rem 0; font-size: 1.5rem">{{ .Title }}</h1>
 
-    <!-- 3. Post Description -->
     {{ if .Description }}
     <div
         class="post-description"
@@ -48,10 +47,10 @@
     </div>
     {{ end }}
 
-    <!-- 4. Post Content -->
+
     <div class="post-content">{{ .Content }}</div>
 
-    <!-- 5. TAGS at the end of the post -->
+
     {{ if .Params.tags }}
     <div
         class="post-tags"

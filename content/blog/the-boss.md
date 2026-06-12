@@ -2,7 +2,7 @@
 
 title = "the cost of doing business"
 date = "2026-04-10T17:00:18-04:00"
-description = 'how my saturn square arrived'
+description = 'how my Saturn square arrived'
 categories = ['work']
 tags = ["reflection","self","saturn", "7th"]
 draft = false

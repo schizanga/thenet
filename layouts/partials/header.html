@@ -1,4 +1,4 @@
-<nav class ="nav-top">
+<nav class="nav-top">
     {{- range .Site.Menus.main -}}
     <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
     {{- end -}}
@@ -19,6 +19,7 @@
     </button>
 </nav>
 
+{{ if .IsHome }}
 <div class="header-main">
     <h1 style="margin: 0">
         <a href="/" style="text-decoration: none; color: inherit"
@@ -27,3 +28,4 @@
     </h1>
     <p class="site-byline">{{ .Site.Params.description }}</p>
 </div>
+{{ end }}
