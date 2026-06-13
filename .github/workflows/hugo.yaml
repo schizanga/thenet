@@ -20,8 +20,8 @@ jobs:
     env:
       DART_SASS_VERSION: 1.77.4
       GO_VERSION: 1.22.4
-      HUGO_VERSION: 0.127.0
-      NODE_VERSION: 20.14.0
+      HUGO_VERSION: 0.128.0
+      NODE_VERSION: 22.2.0
       TZ: Europe/Oslo
     steps:
       - name: Checkout
@@ -42,8 +42,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Create directory for user-specific executable files
-        run: |
-          mkdir -p "${HOME}/.local"
+        run: mkdir -p "${HOME}/.local"
       - name: Install Dart Sass
         run: |
           curl -sLJO "https://github.com/sass/dart-sass/releases/download/${DART_SASS_VERSION}/dart-sass-${DART_SASS_VERSION}-linux-x64.tar.gz"
@@ -67,30 +66,15 @@ jobs:
         run: |
           [[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true
       - name: Configure Git
-        run: |
-          git config core.quotepath false
-      - name: Cache restore
-        id: cache-restore
-        uses: actions/cache/restore@v4
-        with:
-          path: ${{ runner.temp }}/hugo_cache
-          key: hugo-${{ github.run_id }}
-          restore-keys: hugo-
+        run: git config core.quotepath false
       - name: Build the site
         run: |
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/" \
-            --cacheDir "${{ runner.temp }}/hugo_cache"
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Pagefind Search Indexing
         run: npx pagefind --site public
-      - name: Cache save
-        id: cache-save
-        uses: actions/cache/save@v4
-        with:
-          path: ${{ runner.temp }}/hugo_cache
-          key: ${{ steps.cache-restore.outputs.cache-primary-key }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
