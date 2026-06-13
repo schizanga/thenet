@@ -84,6 +84,6 @@ ignoreErrors = ["error-disable-taxonomy"]
             url = "/"
             weight = 5
         [[menu.main]]
-            name = "resources"
+            name = "library"
             url = "/resources"
             weight = 4
