@@ -12,6 +12,8 @@ Here you'll find my work, my ideas, thoughts, and more.
 
 #### Why?
 
+Digital sovereignty. Google is tripping. 
+
 Because how you do anything is how you do everything. Aren't you sick of not owning a house AND your data? I am. 
 
 * I love tinkering and building things.
@@ -29,7 +31,3 @@ The current tech stack : HTML, CSS, a bit of SASS, and Go*.
 ### When?
 
 Until we all get kicked off the internet.
-
-### Last But Not Least
-
-Liberate all Black and Brown people from the burdens of white supremacy.

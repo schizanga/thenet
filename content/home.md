@@ -5,5 +5,5 @@ draft = false
 
 changelog
 ### june 12 2026
-* new resource page
-* dark mode 🤘🏾
+* I love sharing resouces dude. Visit the [library](https://samchizanga.com/library/).
+* dark mode baby 🤘🏾
