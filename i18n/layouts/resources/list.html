@@ -1,0 +1,107 @@
+{{ define "main" }}
+<content>
+    <!-- 1. Search Bar -->
+    <div id="search" style="margin: 2rem 0"></div>
+
+    <!-- 2. Resource Library Body -->
+    <div id="resource-library" data-pagefind-body>
+        {{ range .Pages.GroupByParam "category" }}
+        <section class="resource-group" style="margin-bottom: 4rem">
+            <!-- Category Header -->
+            <h2
+                style="
+                    border-bottom: 1px solid #eee;
+                    padding-bottom: 0.5rem;
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+                    letter-spacing: 2px;
+                    opacity: 0.6;
+                    margin-bottom: 1.5rem;
+                "
+            >
+                {{ .Key }}
+            </h2>
+
+            <!-- GRID CONTAINER -->
+            <div
+                style="
+                    display: grid;
+                    grid-template-columns: repeat(
+                        auto-fill,
+                        minmax(280px, 1fr)
+                    );
+                    gap: 2.5rem 1.5rem;
+                "
+            >
+                {{ range .Pages.ByTitle }}
+                <div
+                    class="resource-item"
+                    style="display: flex; flex-direction: column"
+                >
+                    <a
+                        href="{{ if .Params.link }}{{ .Params.link }}{{ else }}{{ .Permalink }}{{ end }}"
+                        target="_blank"
+                        rel="noopener"
+                        style="
+                            font-weight: bold;
+                            font-size: 1.1rem;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                        "
+                    >
+                        {{ .Title }}
+                    </a>
+                    {{ if .Description }}
+                    <div
+                        style="
+                            margin-top: 8px;
+                            opacity: 0.8;
+                            font-size: 0.95rem;
+                            line-height: 1.5;
+                        "
+                    >
+                        {{ .Description }}
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </section>
+        {{ end }}
+    </div>
+</content>
+
+<!-- Pagefind Assets -->
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+    window.addEventListener("DOMContentLoaded", (event) => {
+        new PagefindUI({
+            element: "#search",
+            showSubResults: true,
+            resetFilters: true,
+            baseUrl: "/",
+
+            translations: {
+                placeholder: "take a look...",
+                clear_search: "Clear",
+                load_more: "Load more results",
+            },
+        });
+    });
+</script>
+
+<style>
+    :root {
+        --pagefind-ui-primary: #8e24aa;
+        --pagefind-ui-text: #333;
+        --pagefind-ui-background: transparent;
+        --pagefind-ui-border: #333;
+    }
+    .pagefind-ui__search-input {
+        font-family: inherit !important;
+        border-radius: 8px !important;
+        border: 2px solid #333 !important;
+    }
+</style>
+{{ end }}
