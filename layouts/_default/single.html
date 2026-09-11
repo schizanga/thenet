@@ -1,94 +1,49 @@
 {{ define "main" }}
 <article>
     {{ if eq .Section "blog" }}
-    <div
-        class="post-meta"
-        style="
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 0.5rem;
-        "
-    ></div>
+    <div class="post-header-meta">
         <div class="post-categories">
             {{ range (.GetTerms "categories") }}
-            <a
-                href="{{ .Permalink }}"
-                style="
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    font-size: 0.8rem;
-                    letter-spacing: 1px;
-                "
-            >
+            <a href="{{ .Permalink }}" class="section-name">
                 {{ .LinkTitle }}
             </a>
             {{ end }}
         </div>
-        <div class="post-date" style="opacity: 0.6">
+        <div class="post-date">
             {{ .Date.Format "01/02/06" }}
         </div>
     </div>
     {{ end }}
 
-
-    <h1 style="margin: 0 0 1.1rem 0; font-size: 1.5rem">{{ .Title }}</h1>
+    <h1 class="post-header-title">{{ .Title }}</h1>
 
     {{ if .Description }}
-    <div
-        class="post-description"
-        style="
-            margin-bottom: 1.5rem;
-            font-style: italic;
-            opacity: 0.7;
-            line-height: 1.4;
-        "
-    >
+    <div class="post-header-description">
         {{ .Description }}
     </div>
     {{ end }}
 
-
     <div class="post-content">{{ .Content }}</div>
 
-
     {{ if .Params.tags }}
-    <div
-        class="post-tags"
-        style="margin-top: 3rem; border-top: 1px solid #eee; padding-top: 1rem"
-    >
-        <small style="opacity: 0.5">TAGS:</small>
+    <div class="post-tags">
+        <small>TAGS:</small>
         {{ range (.GetTerms "tags") }}
-        <a
-            href="{{ .Permalink }}"
-            style="margin-left: 10px; text-decoration: none; opacity: 0.7"
-            >#{{ .LinkTitle }}</a
-        >
+        <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
         {{ end }}
     </div>
     {{ end }}
 
-    <!-- 6. Previous/Next Navigation -->
     {{ if eq .Section "blog" }}
-    <div
-        style="
-            display: flex;
-            justify-content: space-between;
-            margin-top: 2rem;
-            font-weight: bold;
-            border-top: 1px solid #eee;
-            padding-top: 2rem;
-        "
-    >
+    <div class="post-nav">
         <div>
             {{ with .PrevInSection }}
-            <a href="{{ .Permalink }}" style="text-decoration: none"
-                >← PREVIOUS</a
-            >
+            <a href="{{ .Permalink }}">← PREVIOUS</a>
             {{ end }}
         </div>
         <div>
             {{ with .NextInSection }}
-            <a href="{{ .Permalink }}" style="text-decoration: none">NEXT →</a>
+            <a href="{{ .Permalink }}">NEXT →</a>
             {{ end }}
         </div>
     </div>
