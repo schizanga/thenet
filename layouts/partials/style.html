@@ -1,22 +1,44 @@
 <style>
+    @font-face {
+        font-family: "Perfectly Nineties";
+        src: url("/fonts/PerfectlyNineties-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+    @font-face {
+        font-family: "Nineties Headliner";
+        src: url("/fonts/NinetiesHeadliner-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+    }
+
     :root {
         --width: 720px;
-        --font-main: "Inter", sans-serif;
+        --font-main: "Perfectly Nineties", serif;
+        --font-heading: "Nineties Headliner", serif;
         --font-mono: "Roboto Mono", monospace;
-        --background-color: #000000;
+        --background-color: #212529;
         --text-color: #ffffff;
         --heading-color: #ffffff;
-        --link-color: #ac0086;
+        --link-color: #C4CAC3;
+        --button-background: #C4CAC3;
+        --button-text: #212529;
     }
 
     body.light-mode {
         --background-color: #e9ecef;
         --text-color: #000000;
-        --heading-color: #ac0086;
+        --heading-color: #000000;
+        --link-color: #000000;
+        --button-background: #000000;
+        --button-text: #ffffff;
     }
 
     body {
         font-family: var(--font-main);
+        font-size: 1rem;
         background-color: var(--background-color);
         color: var(--text-color);
         max-width: var(--width);
@@ -25,7 +47,45 @@
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        line-height: 1.6;
+        line-height: 1.8;
+        letter-spacing: 0.015em;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-heading);
+        line-height: 1.15;
+        margin-top: 0;
+    }
+    h1 {
+        font-size: 2.25rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1.35rem;
+    }
+    h4 {
+        font-size: 1.15rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    h6 {
+        font-size: 0.9rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        letter-spacing: normal;
     }
 
     main {
@@ -38,10 +98,6 @@
         cursor: pointer;
     }
 
-    a:hover {
-        text-decoration:;
-    }
-
     .nav-top {
         text-align: right;
         margin-bottom: 2rem;
@@ -49,16 +105,37 @@
     .nav-top a {
         margin-left: 15px;
         font-weight: bold;
-        font-size: 1.2em;
+        font-size: 1rem;
+    }
+
+    .theme-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2rem;
+        margin-left: 10px;
+        color: inherit;
+        padding: 0;
     }
 
     .header-main {
         margin-bottom: 0.95rem;
     }
+    .header-main h1 {
+        margin: 0;
+    }
+    .header-main h1 a {
+        text-decoration: none;
+        color: inherit;
+    }
     .site-byline {
         opacity: 0.7;
         font-size: 0.95rem;
         margin-bottom: 1rem;
+    }
+
+    .filter-heading {
+        margin-bottom: 0;
     }
 
     .post-header-meta {
@@ -79,34 +156,59 @@
 
     .post-header-title {
         font-size: 2rem;
-        margin: 0 0 0rem 0;
-        line-height:;
+        line-height: 1.15;
+        margin: 0 0 1.1rem 0;
     }
 
     .post-header-description {
         font-style: italic;
-        opacity: 0.8;
-        margin-bottom: 0.1rem;
+        opacity: 0.7;
+        margin-bottom: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .external-links-note {
+        margin: 0 0 1.5rem 0;
+        font-size: 0.85rem;
+        opacity: 0.65;
     }
 
     .post-tags {
-        margin: 1.5rem 0;
+        margin-top: 3rem;
+        border-top: 1px solid rgba(128, 128, 128, 0.3);
+        padding-top: 1rem;
+    }
+
+    .post-tags small {
+        opacity: 0.5;
     }
 
     .post-tags a {
-        text-transform: lowercase;
-        margin-right: 12px;
-        font-weight: 700;
-        font-size: 0.9rem;
+        margin-left: 10px;
+        text-decoration: none;
+        opacity: 0.7;
+    }
+
+    .post-nav {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        font-weight: bold;
+        border-top: 1px solid rgba(128, 128, 128, 0.3);
+        padding-top: 2rem;
+    }
+
+    .post-nav a {
+        text-decoration: none;
     }
 
     .custom-post-list {
         list-style: none;
         padding: 0;
-        margin: 40px 0;
+        margin: 30px 0;
     }
     .post-item {
-        margin-bottom: 2.5rem;
+        margin-bottom: 2.0rem;
     }
     .post-row {
         display: flex;
@@ -129,36 +231,267 @@
         font-size: 0.95rem;
     }
 
-    .custom-footer {
+    /* ==========================================================================
+       Library Page (sidebar search + category filters)
+       Markup lives in layouts/_default/library.html
+       Entries are sourced from data/library.yaml
+       ========================================================================== */
+    .library {
         display: flex;
+        align-items: flex-start;
+        gap: 2.5rem;
+        margin: 2rem 0;
+    }
+    .library-sidebar {
+        flex: 0 0 200px;
+        position: sticky;
+        top: 1rem;
+    }
+    .library-search input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.5rem 0.7rem;
+        font-family: var(--font-main);
+        font-size: 0.9rem;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        border: 1px solid rgba(128, 128, 128, 0.4);
+        border-radius: 6px;
+        margin-bottom: 1.5rem;
+    }
+    .library-search input:focus {
+        outline: none;
+        border-color: var(--link-color);
+    }
+    .library-filters-label {
+        display: flex;
+        align-items: center;
         justify-content: space-between;
-        align-items: flex-end;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        opacity: 0.6;
+        margin: 0 0 0.5rem 0;
+        cursor: pointer;
+    }
+    .library-filters-label::after {
+        content: "+";
+        font-family: var(--font-mono);
+        font-size: 1rem;
+        line-height: 1;
+    }
+    .library-filters[open] .library-filters-label::after {
+        content: "-";
+    }
+    .library-filters-label::-webkit-details-marker {
+        display: none;
+    }
+    .library-filter-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .library-filter-list li {
+        margin-bottom: 0.5rem;
+    }
+    .library-filter-list label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    .library-content {
+        flex: 1;
+        min-width: 0;
+    }
+    .library-group {
+        margin-bottom: 3rem;
+    }
+    .library-group-heading {
+        text-transform: uppercase;
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+        opacity: 0.6;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .library-subgroup {
+        margin-bottom: 1.5rem;
+    }
+    .library-subgroup-heading {
+        font-size: 1rem;
+        font-weight: 700;
+        opacity: 0.75;
+        margin: 0 0 0.75rem 0;
+    }
+    .library-item {
+        margin-bottom: 1.5rem;
+    }
+    .library-item-title {
+        font-weight: 700;
+        font-size: 1.05rem;
+    }
+    .library-item-note {
+        margin: 0.3rem 0 0 0;
+        opacity: 0.8;
+        font-size: 0.9rem;
+    }
+    .library-no-results {
+        opacity: 0.7;
+        font-style: italic;
+    }
+
+    .ootd-box {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin: 2rem 0;
+    }
+    .ootd-box h4 {
+        margin-top: 0;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        opacity: 0.5;
+    }
+    .ootd-box .ootd-content {
+        line-height: 1.8;
+        font-size: 0.95rem;
+    }
+
+    /* ==========================================================================
+       Newsletter Signup Form
+       ========================================================================== */
+    .newsletter-heading {
+        margin: 0 0 0.2rem 0;
+        font-size: 1.25rem;
+        text-align: center;
+        color: var(--heading-color);
+    }
+    .newsletter-description {
+        margin: 0 0 0.6rem 0;
+        opacity: 0.75;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    .newsletter-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+    }
+    .newsletter-fields {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        width: 100%;
+    }
+    .newsletter-field {
+        flex: 1 1 140px;
+    }
+    .newsletter-field input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.4rem 0.6rem;
+        font-family: var(--font-main);
+        font-size: 0.8rem;
+        color: var(--text-color);
+        background-color: var(--background-color);
+        border: 1px solid rgba(128, 128, 128, 0.4);
+        border-radius: 6px;
+    }
+    .newsletter-field input:focus {
+        outline: none;
+        border-color: var(--link-color);
+    }
+    .newsletter-submit {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0.5rem 0.9rem;
+        font-family: var(--font-main);
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: var(--button-text);
+        background-color: var(--button-background);
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    .newsletter-submit:hover {
+        opacity: 0.85;
+    }
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+
+    .custom-footer {
         margin-top: 50px;
         padding: 20px 0;
         border-top: 1px solid rgba(128, 128, 128, 0.3);
         font-size: 0.85rem;
     }
-
-    .footer-left p {
-        margin: 0;
-        opacity: 0.7;
+    .footer-columns {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.25rem;
     }
-    .footer-right {
-        text-align: right;
+    .footer-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
     }
     .footer-icons {
         display: flex;
-        justify-content: flex-end;
         gap: 12px;
-        margin-bottom: 8px;
     }
     .social-icon {
         color: inherit;
         font-size: 1.2rem;
     }
+    .social-icon-mark {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: currentColor;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        -webkit-mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+    }
+    .instagram-icon {
+        mask-image: url("/icons/instagram.svg");
+        -webkit-mask-image: url("/icons/instagram.svg");
+    }
+    .threads-icon {
+        mask-image: url("/icons/threads.svg");
+        -webkit-mask-image: url("/icons/threads.svg");
+    }
     .made-with {
         margin: 0;
         opacity: 0.7;
+    }
+    .footer-legal-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
+        margin-top: 1rem;
+        font-size: 0.8rem;
     }
 
     hr {
@@ -173,16 +506,22 @@
             flex-direction: column;
             align-items: flex-start;
         }
-        .custom-footer {
+        .footer-row {
+            justify-content: space-between;
+        }
+        .newsletter-fields {
             flex-direction: column;
-            align-items: flex-start;
-            gap: 20px;
         }
-        .footer-right {
-            text-align: left;
+        .newsletter-field {
+            flex: 1 1 auto;
+            width: 100%;
         }
-        .footer-icons {
-            justify-content: flex-start;
+        .library {
+            flex-direction: column;
+        }
+        .library-sidebar {
+            position: static;
+            width: 100%;
         }
     }
 </style>
