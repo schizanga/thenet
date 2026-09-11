@@ -1,16 +1,16 @@
-#### Who?
+### Who?
 
 I'm a [creative producer](https://calibre.careers/editorial/roles/creative-producer) based in Toronto Ontario. 
 
 I _love_ bringing people together, building systems (digital and physical),and being useful. Some of my current hobbies are ruminating, ideating, brainstorming, scheming.
 
-#### What?
+### What?
 
 I love a cozy corner and 2% of the world wide web. This is my cozy corner.
 
 Here you'll find my work, my ideas, thoughts, and more. 
 
-#### Why?
+### Why?
 
 Digital sovereignty. Google is tripping. 
 
@@ -22,7 +22,7 @@ Because how you do anything is how you do everything. Aren't you sick of not own
 * I love sticking it to the man.
 * I LOVE the handmade web. 
 
-#### How?
+### How?
 
 I'm not a developer by any means but I had Myspace, Tdotwire, and I'm incredibly resourceful. This website is a work in progress built with [Hugo](https://gohugo.io), an open-source static site generator and hosted on Github Pages. 
 
