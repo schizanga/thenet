@@ -31,7 +31,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
- description = "Sam Chizanga's writing, resources, and offerings."
+ description = "Writing, resources, and offerings."
 
   # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
   # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
@@ -46,7 +46,7 @@ ignoreErrors = ["error-disable-taxonomy"]
   # Another "title" :-). This one is used as the site_name on the Hugo's internal
   # opengraph structured data template.
   # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-  title = "Sam Chizanga LinkedIn"
+  title = "Sam Chizanga"
 
   # This theme will, by default, inject a made-with-line at the bottom of the page.
   # You can turn it off, but we would really appreciate if you don’t :-).
@@ -80,7 +80,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 
         [[menu.main]]
-            name = "blog"
+            name = "thoughts"
             url = "/blog"
             weight = 1
         [[menu.main]]
@@ -89,5 +89,5 @@ ignoreErrors = ["error-disable-taxonomy"]
             weight = 2
         [[menu.main]]
             name = "library"
-            url = "/library"
+            url = "https://app.notion.com/p/doercreative/3d9f85a9571b8031a1eae001a5d5928b?v=3d9f85a9571b80699e5d000ceeb3e240&source=copy_link"
             weight = 3
