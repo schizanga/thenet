@@ -381,22 +381,27 @@
     .newsletter-form {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
         gap: 0.6rem;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
     }
     .newsletter-fields {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
         width: 100%;
+        align-items: center;
     }
     .newsletter-field {
-        flex: 1 1 140px;
+        flex: 1 1 180px;
+        min-width: 0;
     }
     .newsletter-field input {
         width: 100%;
         box-sizing: border-box;
-        padding: 0.4rem 0.6rem;
+        padding: 0.6rem 0.8rem;
         font-family: var(--font-main);
         font-size: 0.8rem;
         color: var(--text-color);
@@ -409,9 +414,9 @@
         border-color: var(--link-color);
     }
     .newsletter-submit {
-        width: 100%;
+        flex: 0 0 auto;
         box-sizing: border-box;
-        padding: 0.5rem 0.9rem;
+        padding: 0.6rem 1rem;
         font-family: var(--font-main);
         font-size: 0.8rem;
         font-weight: 700;
@@ -459,7 +464,24 @@
     }
     .social-icon {
         color: inherit;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         font-size: 1.2rem;
+        line-height: 1;
+    }
+    .social-icon svg {
+        display: block;
+        width: 20px;
+        height: 20px;
+        stroke: currentColor;
+        fill: none;
+    }
+    .social-icon svg path,
+    .social-icon svg circle,
+    .social-icon svg rect,
+    .social-icon svg polyline {
+        vector-effect: non-scaling-stroke;
     }
     .social-icon-mark {
         display: block;
@@ -509,11 +531,17 @@
         .footer-row {
             justify-content: space-between;
         }
+        .newsletter-form {
+            max-width: 100%;
+        }
         .newsletter-fields {
             flex-direction: column;
         }
         .newsletter-field {
             flex: 1 1 auto;
+            width: 100%;
+        }
+        .newsletter-submit {
             width: 100%;
         }
         .library {
