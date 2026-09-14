@@ -27,7 +27,9 @@
     <body>
         <header>{{- partial "header.html" . -}}</header>
         <main>{{- block "main" . }}{{- end }}</main>
-        <footer>{{- partial "footer.html" . -}}</footer>
+        <footer class="custom-footer">
+            {{- partial "footer.html" . -}}
+        </footer>
 
         <!-- A partial to be overwritten by the user.
   Simply place a custom_body.html into
