@@ -1,51 +1,57 @@
 <footer class="custom-footer">
-    <div class="footer-left">
-        <p>When all else fails, try again.</p>
+    <div class="footer-newsletter">
+        {{ partial "newsletter-form.html" . }}
     </div>
 
-    <div class="footer-right">
-        <div class="footer-icons">
-            <a
-                href="mailto:hi@samchizanga.com"
-                class="social-icon"
-                aria-label="Email"
-            >
-                <svg
-                    viewBox="0 0 24 24"
-                    width="20"
-                    height="20"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
+    <div class="footer-columns">
+        <div class="footer-row">
+            <p class="made-with">
+                Made with
+                <a href="https://github.com/janraasch/hugo-bearblog/">Hugo Bear</a>
+            </p>
+            <div class="footer-icons">
+                <a
+                    href="mailto:hi@samchizanga.com"
+                    class="social-icon"
+                    aria-label="Email"
+                    title="Email"
                 >
-                    <path
-                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                    ></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-
-                <script>
-                    const toggle = document.getElementById("theme-toggle");
-                    const body = document.body;
-                    const currentTheme = localStorage.getItem("theme");
-                    if (currentTheme === "light") {
-                        body.classList.add("light-mode");
-                    }
-                    toggle.addEventListener("click", () => {
-                        body.classList.toggle("light-mode");
-                        localStorage.setItem(
-                            "theme",
-                            body.classList.contains("light-mode")
-                                ? "light"
-                                : "dark",
-                        );
-                    });
-                </script>
-            </a>
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="20"
+                        height="20"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                    >
+                        <path
+                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                        ></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+                <a
+                    href="https://www.instagram.com/samchizanga/"
+                    class="social-icon"
+                    aria-label="Instagram"
+                    title="Instagram"
+                >
+                    <span class="social-icon-mark instagram-icon" aria-hidden="true"></span>
+                </a>
+                <a
+                    href="https://www.threads.net/@samchizanga"
+                    class="social-icon"
+                    aria-label="Threads"
+                    title="Threads"
+                >
+                    <span class="social-icon-mark threads-icon" aria-hidden="true"></span>
+                </a>
+            </div>
         </div>
-        <p class="made-with">
-            Made with
-            <a href="https://github.com/janraasch/hugo-bearblog/">Hugo Bear</a>
-        </p>
+        <nav class="footer-legal-links" aria-label="Legal links">
+            <a href="/privacy-policy/">Privacy Policy</a>
+            <a href="/legal-notices/">Legal Notices</a>
+            <a href="/general-conditions/">General Conditions</a>
+        </nav>
     </div>
 </footer>

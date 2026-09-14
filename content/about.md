@@ -1,33 +1,10 @@
-### Who?
 
-I'm a [creative producer](https://calibre.careers/editorial/roles/creative-producer) based in Toronto Ontario. 
+I'm a Sam, a [creative producer](https://calibre.careers/editorial/roles/creative-producer) and modern astrologer based in Toronto, Ontario. 
 
-I _love_ bringing people together, building systems (digital and physical),and being useful. Some of my current hobbies are ruminating, ideating, brainstorming, scheming.
+I _love_ bringing people together, building frameworks and systems (digital and physical),and being useful. 
 
-### What?
+I believe in the metaphysical principles of the universe. The fundamental nature of reality guides how I work. I utilize my esoteric knowledge in combination with the work I have done to bring life into new ideas, rejuvnating exising ideas and systems. My goal is never to convince you of the validity of these principles. We'll let the work we do speak for itself.
 
-I love a cozy corner and 2% of the world wide web. This is my cozy corner.
+If this sounds like something you can rock with, check out my offerings. 
 
-Here you'll find my work, my ideas, thoughts, and more. 
-
-### Why?
-
-Digital sovereignty. Google is tripping. 
-
-Because how you do anything is how you do everything. Aren't you sick of not owning a house AND your data? I am. 
-
-* I love tinkering and building things.
-* I want to own what is mine to own. Not everyday "you're the product."
-* I want to say whatever I want. 👀
-* I love sticking it to the man.
-* I LOVE the handmade web. 
-
-### How?
-
-I'm not a developer by any means but I had Myspace, Tdotwire, and I'm incredibly resourceful. This website is a work in progress built with [Hugo](https://gohugo.io), an open-source static site generator and hosted on Github Pages. 
-
-The current tech stack : HTML, CSS, a bit of SASS, and Go*. 
-
-### When?
-
-Until we all get kicked off the internet.
+This site was built with [Hugo](https://gohugo.io), an open-source static site generator and hosted on Github Pages.

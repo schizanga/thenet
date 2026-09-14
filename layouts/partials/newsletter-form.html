@@ -1,0 +1,34 @@
+<div class="newsletter">
+    <h2 class="newsletter-heading">get hip</h2>
+    <p class="newsletter-description">lorem impsum</p>
+    <!-- TODO: replace action="#" with your real endpoint once you pick a form service (e.g. Formspree, Netlify Forms) -->
+    <form class="newsletter-form" action="#" method="POST">
+        <div class="newsletter-fields">
+            <div class="newsletter-field">
+                <label for="newsletter-name" class="visually-hidden">First name</label>
+                <input
+                    type="text"
+                    id="newsletter-name"
+                    name="first_name"
+                    placeholder="your name"
+                    autocomplete="given-name"
+                    required
+                />
+            </div>
+            <div class="newsletter-field">
+                <label for="newsletter-email" class="visually-hidden">Email address</label>
+                <input
+                    type="email"
+                    id="newsletter-email"
+                    name="email"
+                    placeholder="your email"
+                    autocomplete="email"
+                    required
+                />
+            </div>
+        </div>
+
+
+        <button type="submit" class="newsletter-submit">Subscribe</button>
+    </form>
+</div>
