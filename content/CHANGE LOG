@@ -1,0 +1,644 @@
+CHANGE LOG
+
+diff --git a/content/home.md b/content/home.md
+index fa27544..8c14eaf 100644
+--- a/content/home.md
++++ b/content/home.md
+@@ -5,5 +5,5 @@ draft = false
+
+ changelog
+ ### june 12 2026
+-* I love sharing resources dude. Visit the [library](https://samchizanga.com/resources/).
++* I love sharing resources dude. Visit the [library](/library/).
+ * dark mode baby 🤘🏾
+diff --git a/layouts/_default/list.html b/layouts/_default/list.html
+index dca06d2..431a84a 100644
+--- a/layouts/_default/list.html
++++ b/layouts/_default/list.html
+@@ -1,25 +1,25 @@
+ {{ define "main" }}
+ <content>
+   {{ if .Data.Singular }}
+-    <h3 style="margin-bottom:0">Filtering for "{{ .Title }}"</h3>
++    <h3 class="filter-heading">Filtering for "{{ .Title }}"</h3>
+     <small><a href="{{ "/" | relURL }}">Remove filter</a></small>
+   {{ end }}
+
+-  <ul style="list-style: none; padding: 0; margin-top: 2rem;">
++  <ul class="custom-post-list">
+     {{ range .Pages }}
+-    <li class="post-item" style="margin-bottom: 2rem;">
++    <li class="post-item">
+
+-      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+-        <a href="{{ .Permalink }}" style="font-weight: bold; font-size: 1.1rem;">
++      <div class="post-row">
++        <a href="{{ .Permalink }}" class="post-title">
+           {{ .Title }}
+         </a>
+-        <span class="post-date" style="opacity: 0.6; font-size: 0.9rem;">
++        <span class="post-date">
+           {{ .Date.Format "02 Jan, 2006" }}
+         </span>
+       </div>
+
+       {{ if .Description }}
+-      <div class="post-description" style="margin-top: 5px; opacity: 0.8; font-size: 0.95rem;">
++      <div class="post-summary">
+         {{ .Description }}
+       </div>
+       {{ end }}
+diff --git a/layouts/_default/single.html b/layouts/_default/single.html
+index b838937..4eacc4d 100644
+--- a/layouts/_default/single.html
++++ b/layouts/_default/single.html
+@@ -1,94 +1,49 @@
+ {{ define "main" }}
+ <article>
+     {{ if eq .Section "blog" }}
+-    <div
+-        class="post-meta"
+-        style="
+-            display: flex;
+-            justify-content: space-between;
+-            margin-bottom: 0.5rem;
+-        "
+-    ></div>
++    <div class="post-header-meta">
+         <div class="post-categories">
+             {{ range (.GetTerms "categories") }}
+-            <a
+-                href="{{ .Permalink }}"
+-                style="
+-                    text-transform: uppercase;
+-                    font-weight: bold;
+-                    font-size: 0.8rem;
+-                    letter-spacing: 1px;
+-                "
+-            >
++            <a href="{{ .Permalink }}" class="section-name">
+                 {{ .LinkTitle }}
+             </a>
+             {{ end }}
+         </div>
+-        <div class="post-date" style="opacity: 0.6">
++        <div class="post-date">
+             {{ .Date.Format "01/02/06" }}
+         </div>
+     </div>
+     {{ end }}
+
+-
+-    <h1 style="margin: 0 0 1.1rem 0; font-size: 1.5rem">{{ .Title }}</h1>
++    <h1 class="post-header-title">{{ .Title }}</h1>
+
+     {{ if .Description }}
+-    <div
+-        class="post-description"
+-        style="
+-            margin-bottom: 1.5rem;
+-            font-style: italic;
+-            opacity: 0.7;
+-            line-height: 1.4;
+-        "
+-    >
++    <div class="post-header-description">
+         {{ .Description }}
+     </div>
+     {{ end }}
+
+-
+     <div class="post-content">{{ .Content }}</div>
+
+-
+     {{ if .Params.tags }}
+-    <div
+-        class="post-tags"
+-        style="margin-top: 3rem; border-top: 1px solid #eee; padding-top: 1rem"
+-    >
+-        <small style="opacity: 0.5">TAGS:</small>
++    <div class="post-tags">
++        <small>TAGS:</small>
+         {{ range (.GetTerms "tags") }}
+-        <a
+-            href="{{ .Permalink }}"
+-            style="margin-left: 10px; text-decoration: none; opacity: 0.7"
+-            >#{{ .LinkTitle }}</a
+-        >
++        <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>
+         {{ end }}
+     </div>
+     {{ end }}
+
+-    <!-- 6. Previous/Next Navigation -->
+     {{ if eq .Section "blog" }}
+-    <div
+-        style="
+-            display: flex;
+-            justify-content: space-between;
+-            margin-top: 2rem;
+-            font-weight: bold;
+-            border-top: 1px solid #eee;
+-            padding-top: 2rem;
+-        "
+-    >
++    <div class="post-nav">
+         <div>
+             {{ with .PrevInSection }}
+-            <a href="{{ .Permalink }}" style="text-decoration: none"
+-                >← PREVIOUS</a
+-            >
++            <a href="{{ .Permalink }}">← PREVIOUS</a>
+             {{ end }}
+         </div>
+         <div>
+             {{ with .NextInSection }}
+-            <a href="{{ .Permalink }}" style="text-decoration: none">NEXT →</a>
++            <a href="{{ .Permalink }}">NEXT →</a>
+             {{ end }}
+         </div>
+     </div>
+diff --git a/layouts/partials/footer.html b/layouts/partials/footer.html
+index a40dd8a..71976d2 100644
+--- a/layouts/partials/footer.html
++++ b/layouts/partials/footer.html
+@@ -23,24 +23,6 @@
+                     ></path>
+                     <polyline points="22,6 12,13 2,6"></polyline>
+                 </svg>
+-
+-                <script>
+-                    const toggle = document.getElementById("theme-toggle");
+-                    const body = document.body;
+-                    const currentTheme = localStorage.getItem("theme");
+-                    if (currentTheme === "light") {
+-                        body.classList.add("light-mode");
+-                    }
+-                    toggle.addEventListener("click", () => {
+-                        body.classList.toggle("light-mode");
+-                        localStorage.setItem(
+-                            "theme",
+-                            body.classList.contains("light-mode")
+-                                ? "light"
+-                                : "dark",
+-                        );
+-                    });
+-                </script>
+             </a>
+         </div>
+         <p class="made-with">
+diff --git a/layouts/partials/header.html b/layouts/partials/header.html
+index 35ac43d..664a6b1 100644
+--- a/layouts/partials/header.html
++++ b/layouts/partials/header.html
+@@ -2,30 +2,30 @@
+     {{- range .Site.Menus.main -}}
+     <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+     {{- end -}}
+-    <button
+-        id="theme-toggle"
+-        aria-label="Toggle Theme"
+-        style="
+-            background: none;
+-            border: none;
+-            cursor: pointer;
+-            font-size: 1.2rem;
+-            margin-left: 10px;
+-            color: inherit;
+-            padding: 0;
+-        "
+-    >
++    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+         <span class="theme-icon">💡</span>
+     </button>
+ </nav>
+
++<script>
++    const toggle = document.getElementById("theme-toggle");
++    const body = document.body;
++    const currentTheme = localStorage.getItem("theme");
++    if (currentTheme === "light") {
++        body.classList.add("light-mode");
++    }
++    toggle.addEventListener("click", () => {
++        body.classList.toggle("light-mode");
++        localStorage.setItem(
++            "theme",
++            body.classList.contains("light-mode") ? "light" : "dark",
++        );
++    });
++</script>
++
+ {{ if .IsHome }}
+ <div class="header-main">
+-    <h1 style="margin: 0">
+-        <a href="/" style="text-decoration: none; color: inherit"
+-            >{{ .Site.Title }}</a
+-        >
+-    </h1>
++    <h1><a href="/">{{ .Site.Title }}</a></h1>
+     <p class="site-byline">{{ .Site.Params.description }}</p>
+ </div>
+ {{ end }}
+diff --git a/layouts/partials/nav.html b/layouts/partials/nav.html
+deleted file mode 100644
+index 4f4bce7..0000000
+--- a/layouts/partials/nav.html
++++ /dev/null
+@@ -1,3 +0,0 @@
+-{{ range .Site.Menus.main }}
+-<a href="{{ .URL }}">{{ .Name }}</a>
+-{{ end }}
+diff --git a/layouts/partials/post_navigator.html b/layouts/partials/post_navigator.html
+deleted file mode 100644
+index f630005..0000000
+--- a/layouts/partials/post_navigator.html
++++ /dev/null
+@@ -1,19 +0,0 @@
+-<div style="font-size:0.8em;display:flex;gap:16px;justify-content:center;">
+-  <p>
+-    {{ if .PrevInSection }}
+-    <a href="{{ .PrevInSection.Permalink }}">
+-      << Previous Post</a>
+-        {{ else }}
+-        <strike>
+-          << Previous Post</strike>
+-            {{ end }}
+-  </p>
+-  <p>|</p>
+-  <p>
+-    {{ if .NextInSection }}
+-    <a href="{{ .NextInSection.Permalink }}">Next Post >></a>
+-    {{ else }}
+-    <strike>Next Post >></strike>
+-    {{ end }}
+-  </p>
+-</div>
+diff --git a/layouts/partials/style.html b/layouts/partials/style.html
+index 8e33f42..55b7f0a 100644
+--- a/layouts/partials/style.html
++++ b/layouts/partials/style.html
+@@ -38,10 +38,6 @@
+         cursor: pointer;
+     }
+
+-    a:hover {
+-        text-decoration:;
+-    }
+-
+     .nav-top {
+         text-align: right;
+         margin-bottom: 2rem;
+@@ -52,15 +48,36 @@
+         font-size: 1.2em;
+     }
+
++    .theme-toggle {
++        background: none;
++        border: none;
++        cursor: pointer;
++        font-size: 1.2rem;
++        margin-left: 10px;
++        color: inherit;
++        padding: 0;
++    }
++
+     .header-main {
+         margin-bottom: 0.95rem;
+     }
++    .header-main h1 {
++        margin: 0;
++    }
++    .header-main h1 a {
++        text-decoration: none;
++        color: inherit;
++    }
+     .site-byline {
+         opacity: 0.7;
+         font-size: 0.95rem;
+         margin-bottom: 1rem;
+     }
+
++    .filter-heading {
++        margin-bottom: 0;
++    }
++
+     .post-header-meta {
+         display: flex;
+         justify-content: space-between;
+@@ -78,26 +95,44 @@
+     }
+
+     .post-header-title {
+-        font-size: 2rem;
+-        margin: 0 0 0rem 0;
+-        line-height:;
++        font-size: 1.5rem;
++        margin: 0 0 1.1rem 0;
+     }
+
+     .post-header-description {
+         font-style: italic;
+-        opacity: 0.8;
+-        margin-bottom: 0.1rem;
++        opacity: 0.7;
++        margin-bottom: 1.5rem;
++        line-height: 1.4;
+     }
+
+     .post-tags {
+-        margin: 1.5rem 0;
++        margin-top: 3rem;
++        border-top: 1px solid rgba(128, 128, 128, 0.3);
++        padding-top: 1rem;
++    }
++
++    .post-tags small {
++        opacity: 0.5;
+     }
+
+     .post-tags a {
+-        text-transform: lowercase;
+-        margin-right: 12px;
+-        font-weight: 700;
+-        font-size: 0.9rem;
++        margin-left: 10px;
++        text-decoration: none;
++        opacity: 0.7;
++    }
++
++    .post-nav {
++        display: flex;
++        justify-content: space-between;
++        margin-top: 2rem;
++        font-weight: bold;
++        border-top: 1px solid rgba(128, 128, 128, 0.3);
++        padding-top: 2rem;
++    }
++
++    .post-nav a {
++        text-decoration: none;
+     }
+
+     .custom-post-list {
+@@ -129,6 +164,61 @@
+         font-size: 0.95rem;
+     }
+
++    #search {
++        margin: 2rem 0;
++    }
++    .resource-group {
++        margin-bottom: 4rem;
++    }
++    .resource-group h2 {
++        border-bottom: 1px solid rgba(128, 128, 128, 0.3);
++        padding-bottom: 0.5rem;
++        text-transform: uppercase;
++        font-size: 0.8rem;
++        letter-spacing: 2px;
++        opacity: 0.6;
++        margin-bottom: 1.5rem;
++    }
++    .resource-grid {
++        display: grid;
++        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
++        gap: 2.5rem 1.5rem;
++    }
++    .resource-item {
++        display: flex;
++        flex-direction: column;
++    }
++    .resource-item a {
++        font-weight: bold;
++        font-size: 1.1rem;
++        text-decoration: none;
++    }
++    .resource-item .resource-description {
++        margin-top: 8px;
++        opacity: 0.8;
++        font-size: 0.95rem;
++        line-height: 1.5;
++    }
++
++    .ootd-box {
++        background: rgba(255, 255, 255, 0.05);
++        border: 1px solid rgba(255, 255, 255, 0.1);
++        padding: 1.5rem;
++        border-radius: 8px;
++        margin: 2rem 0;
++    }
++    .ootd-box h4 {
++        margin-top: 0;
++        text-transform: uppercase;
++        font-size: 0.8rem;
++        letter-spacing: 1px;
++        opacity: 0.5;
++    }
++    .ootd-box .ootd-content {
++        line-height: 1.8;
++        font-size: 0.95rem;
++    }
++
+     .custom-footer {
+         display: flex;
+         justify-content: space-between;
+diff --git a/layouts/resources/list.html b/layouts/resources/list.html
+deleted file mode 100644
+index f373560..0000000
+--- a/layouts/resources/list.html
++++ /dev/null
+@@ -1,106 +0,0 @@
+-{{ define "main" }}
+-<content>
+-    <!-- 1. Search Bar -->
+-    <div id="search" style="margin: 2rem 0"></div>
+-
+-    <!-- 2. Resource Library Body -->
+-    <div id="resource-library" data-pagefind-body>
+-        {{ range .Pages.GroupByParam "category" }}
+-        <section class="resource-group" style="margin-bottom: 4rem">
+-            <!-- Category Header -->
+-            <h2
+-                style="
+-                    border-bottom: 1px solid #eee;
+-                    padding-bottom: 0.5rem;
+-                    text-transform: uppercase;
+-                    font-size: 0.8rem;
+-                    letter-spacing: 2px;
+-                    opacity: 0.6;
+-                    margin-bottom: 1.5rem;
+-                "
+-            >
+-                {{ .Key }}
+-            </h2>
+-
+-            <!-- GRID CONTAINER -->
+-            <div
+-                style="
+-                    display: grid;
+-                    grid-template-columns: repeat(
+-                        auto-fill,
+-                        minmax(280px, 1fr)
+-                    );
+-                    gap: 2.5rem 1.5rem;
+-                "
+-            >
+-                {{ range .Pages.ByTitle }}
+-                <div
+-                    class="resource-item"
+-                    style="display: flex; flex-direction: column"
+-                >
+-                    <a
+-                        href="{{ if .Params.link }}{{ .Params.link }}{{ else }}{{ .Permalink }}{{ end }}"
+-                        target="_blank"
+-                        rel="noopener"
+-                        style="
+-                            font-weight: bold;
+-                            font-size: 1.1rem;
+-                            text-decoration: none;
+-                        "
+-                    >
+-                        {{ .Title }}
+-                    </a>
+-                    {{ if .Description }}
+-                    <div
+-                        style="
+-                            margin-top: 8px;
+-                            opacity: 0.8;
+-                            font-size: 0.95rem;
+-                            line-height: 1.5;
+-                        "
+-                    >
+-                        {{ .Description }}
+-                    </div>
+-                    {{ end }}
+-                </div>
+-                {{ end }}
+-            </div>
+-        </section>
+-        {{ end }}
+-    </div>
+-</content>
+-
+-<!-- Pagefind Assets -->
+-<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+-<script src="/pagefind/pagefind-ui.js"></script>
+-<script>
+-    window.addEventListener("DOMContentLoaded", (event) => {
+-        new PagefindUI({
+-            element: "#search",
+-            showSubResults: true,
+-            resetFilters: true,
+-            baseUrl: "/",
+-
+-            translations: {
+-                placeholder: "take a look...",
+-                clear_search: "Clear",
+-                load_more: "Load more results",
+-            },
+-        });
+-    });
+-</script>
+-
+-<style>
+-    :root {
+-        --pagefind-ui-primary: #8e24aa;
+-        --pagefind-ui-text: #333;
+-        --pagefind-ui-background: transparent;
+-        --pagefind-ui-border: #333;
+-    }
+-    .pagefind-ui__search-input {
+-        font-family: inherit !important;
+-        border-radius: 8px !important;
+-        border: 2px solid #333 !important;
+-    }
+-</style>
+-{{ end }}
+diff --git a/layouts/shortcodes/outfit-details.html b/layouts/shortcodes/outfit-details.html
+index bb5d2f3..914a90e 100644
+--- a/layouts/shortcodes/outfit-details.html
++++ b/layouts/shortcodes/outfit-details.html
+@@ -1,14 +1,6 @@
+-<div class="ootd-box" style="
+-    background: rgba(255, 255, 255, 0.05);
+-    border: 1px solid rgba(255, 255, 255, 0.1);
+-    padding: 1.5rem;
+-    border-radius: 8px;
+-    margin: 2rem 0;
+-">
+-    <h4 style="margin-top: 0; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; opacity: 0.5;">
+-        Outfit Details
+-    </h4>
+-    <div style="line-height: 1.8; font-size: 0.95rem;">
++<div class="ootd-box">
++    <h4>Outfit Details</h4>
++    <div class="ootd-content">
+         {{ .Inner | markdownify }}
+     </div>
+-</div>
+\ No newline at end of file
++</div>
+
+
+
+LIBRARY
+
+Open the data file matching its category — e.g. `data/library/articles.yaml`.
+
+2. Add a new block:
+   ```yaml
+
+# - title: ""
+#   url: ""
+#   category: ""
+#   subcategory: ""
+#   note: ""
+
+   ```
+3. To add a **brand-new category**, create a new file `data/library/your-category-name.yaml` with the same structure. A checkbox and section heading for it will appear automatically — no template edits needed.
+
+---
+
+## Chronological history
+
+**1. Initial build** — created the filtering system from scratch:
+- `data/library.yaml` (single flat file) — 6 entries migrated from old freeform Markdown, each with `title`/`url`/`category`/`note`
+- `content/library.md` — simplified to front-matter-only, added `layout = "library"`
+- `layouts/_default/library.html` — new template: sidebar with search box + auto-generated category checkboxes (derived from data, not hand-maintained), main area with entries grouped by category, vanilla-JS filter (search + checkboxes combine with AND logic, empty groups auto-hide)
+- `layouts/partials/style.html` — added `.library`, `.library-sidebar`, `.library-search`, `.library-filter-list`, `.library-content`, `.library-group`, `.library-item`, `.library-no-results`, plus a mobile breakpoint stacking the sidebar above content under 600px
+
+**2. Fixed a deprecation warning** — `.Site.Data.library` → `(hugo.Data).library` (Hugo deprecated the old syntax).
+
+**3. Removed dead CSS** — `#search`, `.resource-group`, `.resource-grid`, `.resource-item` rules deleted from `style.html`. These were leftovers from the old `layouts/resources/list.html` (deleted earlier, in a separate task) and had nothing left referencing them.
+
+**4. Incident: `content/library.md` was deleted** (by you, assuming it was redundant now that entries live in the data file) — this broke the `/library` route entirely, since that file's front matter is what tells Hugo to create the page and which template to use. You reinstated it with the original front matter; page confirmed working again.
+
+**5. Split the data file for scalability** — in preparation for "hundreds of links":
+- Deleted `data/library.yaml`
+- Created `data/library/calculators-and-platforms.yaml` and `data/library/articles.yaml` (same 6 entries, same content, just divided by category into separate files)
+- Updated `layouts/_default/library.html`: the data-loading step now flattens `hugo.Data.library` (a map of `{filename: [entries]}`) back into a single list before the existing grouping/search/checkbox logic runs — so nothing downstream needed to change.
+
+
+Everything for the newsletter form lives in **one file: `layouts/partials/newsletter-form.html`**. There's a clearly marked block inside it:
+
+```html
+<!-- ============================================================
+     EDIT HERE to rename lists or add/remove one.
+     ...
+     ============================================================ -->
+<fieldset class="newsletter-lists">
+    ...
+</fieldset>
+<!-- ============================================================ -->
+```
+
+To rename a list, just change its visible text (e.g. `Offerings` → `Products`) — no need to touch the `name` attribute unless you also want to rename it on the backend side later. To add a 4th list, copy one of the `<label class="newsletter-list-option">...</label>` blocks and give it a unique `name`.
+
+**What I implemented:**
+- Nothing is pre-checked by default (visitors actively opt in to whichever they want).
+- "All of it" is a pure UI convenience — checking it auto-checks Blog/Podcast/Offerings (and unchecking any individual one un-checks "All of it"); it submits no value of its own.
+- Submission isn't blocked if nothing's checked — reasonable for now since the form has no real backend yet (`action="#"` placeholder still in place).
+- Styling kept compact and self-contained in the existing `.newsletter-*` CSS section in `layouts/partials/style.html`.
+
+**Validation:** `hugo --cleanDestinationDir` built clean (38 pages, no errors), and confirmed via `grep` that all four checkboxes render with correct attributes.

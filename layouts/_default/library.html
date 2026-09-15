@@ -1,0 +1,231 @@
+{{ define "main" }}
+<article>
+    <h1 class="post-header-title">{{ .Title }}</h1>
+
+    {{ if .Description }}
+    <div class="post-header-description">{{ .Description }}</div>
+    {{ end }}
+
+    {{ with .Content }}
+    <div class="post-content">{{ . }}</div>
+    {{ end }}
+
+    <p class="external-links-note">External links open in a new tab.</p>
+
+    {{ $entries := slice }}
+    {{ range (hugo.Data).library }}
+        {{ range . }}
+            {{ $entries = $entries | append . }}
+        {{ end }}
+    {{ end }}
+
+    {{ $categories := slice }}
+    {{ range $entries }}
+        {{ $categories = $categories | append .category }}
+    {{ end }}
+    {{ $categories = partial "sort-ci.html" (dict "items" ($categories | uniq) "key" "") }}
+
+    <div class="library">
+        <aside class="library-sidebar">
+            <div class="library-search">
+                <label for="library-search-input" class="visually-hidden">Search library</label>
+                <input
+                    type="text"
+                    id="library-search-input"
+                    placeholder="Search..."
+                    autocomplete="off"
+                />
+            </div>
+
+            <details class="library-filters" open>
+                <summary class="library-filters-label">Filter by category</summary>
+                <ul class="library-filter-list">
+                    {{ range $categories }}
+                    <li>
+                        <label>
+                            <input type="checkbox" class="library-filter-checkbox" value="{{ . }}" />
+                            {{ . }}
+                        </label>
+                    </li>
+                    {{ end }}
+                </ul>
+            </details>
+
+            {{ $zodiacSigns := slice "Aries" "Taurus" "Gemini" "Cancer" "Leo" "Virgo" "Libra" "Scorpio" "Sagittarius" "Capricorn" "Aquarius" "Pisces" }}
+            <details class="library-filters">
+                <summary class="library-filters-label">Filter by zodiac sign</summary>
+                <ul class="library-filter-list">
+                    <li>
+                        <label>
+                            <input type="radio" name="library-zodiac" class="library-zodiac-radio" value="" checked />
+                            All signs
+                        </label>
+                    </li>
+                    {{ range $zodiacSigns }}
+                    <li>
+                        <label>
+                            <input type="radio" name="library-zodiac" class="library-zodiac-radio" value="{{ . }}" />
+                            {{ . }}
+                        </label>
+                    </li>
+                    {{ end }}
+                </ul>
+            </details>
+
+            {{ $planets := slice "Sun" "Moon" "Mercury" "Venus" "Mars" "Jupiter" "Saturn" "Uranus" "Neptune" "Pluto" }}
+            <details class="library-filters">
+                <summary class="library-filters-label">Filter by planet</summary>
+                <ul class="library-filter-list">
+                    <li>
+                        <label>
+                            <input type="radio" name="library-planet" class="library-planet-radio" value="" checked />
+                            All planets
+                        </label>
+                    </li>
+                    {{ range $planets }}
+                    <li>
+                        <label>
+                            <input type="radio" name="library-planet" class="library-planet-radio" value="{{ . }}" />
+                            {{ . }}
+                        </label>
+                    </li>
+                    {{ end }}
+                </ul>
+            </details>
+
+            {{ $houses := slice "1st" "2nd" "3rd" "4th" "5th" "6th" "7th" "8th" "9th" "10th" "11th" "12th" }}
+            <details class="library-filters">
+                <summary class="library-filters-label">Filter by house</summary>
+                <ul class="library-filter-list">
+                    <li>
+                        <label>
+                            <input type="radio" name="library-house" class="library-house-radio" value="" checked />
+                            All houses
+                        </label>
+                    </li>
+                    {{ range $houses }}
+                    <li>
+                        <label>
+                            <input type="radio" name="library-house" class="library-house-radio" value="{{ . }}" />
+                            {{ . }} house
+                        </label>
+                    </li>
+                    {{ end }}
+                </ul>
+            </details>
+        </aside>
+
+        <div class="library-content">
+            {{ range $categories }}
+            {{ $cat := . }}
+            {{ $catEntries := where $entries "category" $cat }}
+
+            {{ $withoutSign := slice }}
+            {{ $withSign := slice }}
+            {{ range $catEntries }}
+                {{ if .sign }}
+                    {{ $withSign = $withSign | append . }}
+                {{ else }}
+                    {{ $withoutSign = $withoutSign | append . }}
+                {{ end }}
+            {{ end }}
+
+            <section class="library-group" data-category="{{ $cat }}">
+                <h2 class="library-group-heading">{{ $cat }}</h2>
+                <div class="library-group-items">
+                    {{ range (partial "sort-ci.html" (dict "items" $withoutSign "key" "title")) }}
+                    {{ partial "library-item.html" . }}
+                    {{ end }}
+
+                    {{ $signs := slice }}
+                    {{ range $withSign }}
+                        {{ $signs = $signs | append .sign }}
+                    {{ end }}
+                    {{ $signs = partial "sort-ci.html" (dict "items" ($signs | uniq) "key" "") }}
+
+                    {{ range $signs }}
+                    {{ $sign := . }}
+                    <div class="library-subgroup">
+                        <h3 class="library-subgroup-heading">{{ $sign }}</h3>
+                        {{ range (partial "sort-ci.html" (dict "items" (where $withSign "sign" $sign) "key" "title")) }}
+                        {{ partial "library-item.html" . }}
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </section>
+            {{ end }}
+
+            <p class="library-no-results" hidden>No matching resources.</p>
+        </div>
+    </div>
+</article>
+
+<script>
+    (function () {
+        const searchInput = document.getElementById("library-search-input");
+        const checkboxes = document.querySelectorAll(".library-filter-checkbox");
+        const zodiacRadios = document.querySelectorAll(".library-zodiac-radio");
+        const planetRadios = document.querySelectorAll(".library-planet-radio");
+        const houseRadios = document.querySelectorAll(".library-house-radio");
+        const groups = document.querySelectorAll(".library-group");
+        const noResults = document.querySelector(".library-no-results");
+
+        function matchesFilters(item, query, checked, zodiac, planet, house) {
+            const matchesSearch = !query || item.dataset.search.includes(query);
+            const matchesCategory = checked.length === 0 || checked.includes(item.dataset.category);
+            const matchesZodiac = !zodiac || item.dataset.sign === zodiac;
+            const matchesPlanet = !planet || item.dataset.planet === planet;
+            const matchesHouse = !house || item.dataset.house === house;
+            return matchesSearch && matchesCategory && matchesZodiac && matchesPlanet && matchesHouse;
+        }
+
+        function applyFilters() {
+            const query = searchInput.value.trim().toLowerCase();
+            const checked = Array.from(checkboxes)
+                .filter((box) => box.checked)
+                .map((box) => box.value);
+            const zodiacChecked = document.querySelector(".library-zodiac-radio:checked");
+            const zodiac = zodiacChecked ? zodiacChecked.value : "";
+            const planetChecked = document.querySelector(".library-planet-radio:checked");
+            const planet = planetChecked ? planetChecked.value : "";
+            const houseChecked = document.querySelector(".library-house-radio:checked");
+            const house = houseChecked ? houseChecked.value : "";
+
+            let totalVisible = 0;
+
+            groups.forEach((group) => {
+                let groupVisible = 0;
+
+                group.querySelectorAll(".library-subgroup").forEach((subgroup) => {
+                    let subgroupVisible = 0;
+                    subgroup.querySelectorAll(".library-item").forEach((item) => {
+                        const isVisible = matchesFilters(item, query, checked, zodiac, planet, house);
+                        item.hidden = !isVisible;
+                        if (isVisible) subgroupVisible++;
+                    });
+                    subgroup.hidden = subgroupVisible === 0;
+                    groupVisible += subgroupVisible;
+                });
+
+                group.querySelectorAll(":scope > .library-group-items > .library-item").forEach((item) => {
+                    const isVisible = matchesFilters(item, query, checked, zodiac, planet, house);
+                    item.hidden = !isVisible;
+                    if (isVisible) groupVisible++;
+                });
+
+                group.hidden = groupVisible === 0;
+                totalVisible += groupVisible;
+            });
+
+            noResults.hidden = totalVisible !== 0;
+        }
+
+        searchInput.addEventListener("input", applyFilters);
+        checkboxes.forEach((box) => box.addEventListener("change", applyFilters));
+        zodiacRadios.forEach((radio) => radio.addEventListener("change", applyFilters));
+        planetRadios.forEach((radio) => radio.addEventListener("change", applyFilters));
+        houseRadios.forEach((radio) => radio.addEventListener("change", applyFilters));
+    })();
+</script>
+{{ end }}

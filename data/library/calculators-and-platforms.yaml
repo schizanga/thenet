@@ -1,0 +1,24 @@
+# Required: title, url, category
+
+# - title: ""
+#   url: ""
+#   category: "Calculators"
+#   sign: ""
+#   planet: ""
+#   house: ""
+#   note: ""
+
+- title: "Cafe Astrology"
+  url: "https://astro.cafeastrology.com/natal.php"
+  category: "Calculators"
+  note: ""
+
+- title: "⭐️ Astro Seek"
+  url: "https://www.astro-seek.com"
+  category: "Calculators"
+  note: ""
+
+- title: "Astro Diesient"
+  url: "https://www.astro.com/horoscope"
+  category: "Calculators"
+  note: ""

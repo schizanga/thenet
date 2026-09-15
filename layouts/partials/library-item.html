@@ -1,0 +1,15 @@
+<div
+    class="library-item"
+    data-category="{{ .category }}"
+    data-sign="{{ .sign | default "" }}"
+    data-planet="{{ .planet | default "" }}"
+    data-house="{{ .house | default "" }}"
+    data-search="{{ strings.ToLower .title }} {{ strings.ToLower .note }} {{ strings.ToLower .category }} {{ strings.ToLower (.sign | default "") }} {{ strings.ToLower (.planet | default "") }} {{ strings.ToLower (.house | default "") }}"
+>
+    <a href="{{ .url }}" target="_blank" rel="noopener" class="library-item-title">
+        {{ .title }}
+    </a>
+    {{ if .note }}
+    <p class="library-item-note">{{ .note }}</p>
+    {{ end }}
+</div>
