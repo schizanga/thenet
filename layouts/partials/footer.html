@@ -29,7 +29,26 @@
                     <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
             </a>
-
+            <a
+                href="https://www.instagram.com/becomingsamcee/"
+                class="social-icon"
+                aria-label="Instagram"
+                title="Instagram"
+                rel="me"
+            >
+                <span class="social-icon-mark instagram-icon" aria-hidden="true"></span>
+            </a>
+            <a
+                href="https://www.threads.net/@becomingsamcee"
+                class="social-icon"
+                aria-label="Threads"
+                title="Threads"
+                rel="me"
+            >
+                {{ with resources.Get "svg/threads.svg" }}
+                    {{ .Content | safeHTML }}
+                {{ end }}
+            </a>
         </div>
     </div>
     <nav class="footer-legal-links" aria-label="Legal links">
