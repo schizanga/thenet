@@ -36,7 +36,9 @@
                 title="Instagram"
                 rel="me"
             >
-                <span class="social-icon-mark instagram-icon" aria-hidden="true"></span>
+                {{ with resources.Get "svg/instagram.svg" }}
+                    {{ .Content | safeHTML }}
+                {{ end }}
             </a>
             <a
                 href="https://www.threads.net/@becomingsamcee"
