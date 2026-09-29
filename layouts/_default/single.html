@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article>
+<article class="{{ if eq .Section "blog" }}blog-post{{ end }}">
     {{ if eq .Section "blog" }}
     <div class="post-header-meta">
         <div class="post-categories">
@@ -9,9 +9,7 @@
             </a>
             {{ end }}
         </div>
-        <div class="post-date">
-            {{ .Date.Format "01/02/06" }}
-        </div>
+        
     </div>
     {{ end }}
 
