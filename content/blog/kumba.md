@@ -1,12 +1,10 @@
 +++
-
 title = "kumba"
 date = 2026-01-28
 description = 'another failed attempt at coming home'
 categories = ['community', '']
 tags = [""]
 draft = false
-
 +++
 
 _This blog post was originally published on bysamchizanga.substack.com on January 15th, 2026._

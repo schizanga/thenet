@@ -1,12 +1,10 @@
 +++
-
 title = "saying the hard thing out loud"
 date = "2025-05-23T01:36:08-04:00"
 description = 'when the stalking gets to a point.'
 categories = ['self']
 tags = ["virgo","astro notes"]
 draft = true
-
 +++
 
 I'm tired of carrying this alone. 

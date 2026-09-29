@@ -1,10 +1,10 @@
 +++
-date = "2026-04-11T13:48:04-04:00"
 title = "Black women are leading a new era in Canadian film and television"
-draft = true
+date = "2026-04-11T13:48:04-04:00"
+description = 'Black women are leading a new era in Canadian film and television'
+categories = ['archive']
 tags = ["archive","film","career","bylines"]
-
-
+draft = true
 +++
 
 This article was originally published on August 14th, 2022 for [Now Toronto](https://nowtoronto.com/movies/black-women-are-leading-a-new-era-in-canadian-film-and-television/)

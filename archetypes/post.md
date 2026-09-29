@@ -1,12 +1,10 @@
 +++
-date = "{{ .Date }}"
 title = "{{ replace .Name "-" " " | title }}"
+date = {{ .Date }}
+description = ''
+categories = ['', '']
+tags = [""]
 draft = true
-
-#
-tags = [{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}"{{ printf "%s" $term }}",{{ end }}{{ end }}]
-
-
 +++
 
 For a quick cheatsheet, check out https://simplemde.com/markdown-guide.

@@ -3,7 +3,7 @@ title = "git merge"
 date = 2026-05-28
 description = 'recovering after Uranus does their big one'
 categories = ['self']
-tags = ['self', 'career', 'uranus']
+tags = ["self","career","uranus"]
 draft = false
 +++
 

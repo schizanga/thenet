@@ -5,7 +5,6 @@ description = 'alchemizing isolation into self-love'
 categories = ['', '']
 tags = ["self","reflection"]
 draft = false
-
 +++
 
 What does it mean to be alone?

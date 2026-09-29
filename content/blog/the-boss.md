@@ -1,12 +1,10 @@
 +++
-
 title = "the cost of doing business"
 date = "2026-04-10T17:00:18-04:00"
 description = 'how my Saturn square arrived'
 categories = ['work']
-tags = ["reflection","self","saturn", "7th"]
+tags = ["reflection","self","saturn","7th"]
 draft = false
-
 +++
 
 On [January 15th, 2026](samchizanga.com/kumba) a former friend and one-time collaborator made a TikTok about me and the party we put on, called kumba. This is not a call out or a call in. I'm not seeking mediation nor forgiveness. Take it or leave it.

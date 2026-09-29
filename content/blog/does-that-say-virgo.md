@@ -1,12 +1,10 @@
 +++
-
 title = "does that say virgo?"
 date = "2025-08-30T01:36:08-04:00"
 description = 'and other questions that need an answer'
 categories = ['self', '']
-tags = ["virgo","astro notes"]
+tags = ["virgo","astro","notes"]
 draft = false
-
 +++
 
 _This post was originally published on bysamchizanga.substack.com on August 30th, 2026 but Anil Dash said Substack is wack, so here I am._
