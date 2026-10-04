@@ -89,5 +89,5 @@ ignoreErrors = ["error-disable-taxonomy"]
             weight = 2
         [[menu.main]]
             name = "library"
-            url = "https://samchizanga.notion.site/astro-playground-3daf85a9571b8053a900e03dd88c5f02"
+            url = "https://samchizanga.notion.site/an-esoteric-digital-garden?pvs=143"
             weight = 3
