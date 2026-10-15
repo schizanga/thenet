@@ -88,6 +88,6 @@ ignoreErrors = ["error-disable-taxonomy"]
             url = "/about"
             weight = 2
         [[menu.main]]
-            name = "library"
+            name = "digital garden"
             url = "https://samchizanga.notion.site/an-esoteric-digital-garden?pvs=143"
-            weight = 3
+            weight = 4
