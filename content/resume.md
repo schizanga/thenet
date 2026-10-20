@@ -34,6 +34,7 @@ draft = false
 #### Shopify | *01/2021 – 08/2022* 
 * **Primary**
   * Developed and improved operational processes to deploy technical writing and education.
+  
 * **Secondary**  
   * Improved the writer contributor user experience by streamlining the existing processes and programs.
   * Developed campaign strategies derived from campaign analytics to measure performance.
